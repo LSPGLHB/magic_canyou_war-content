@@ -1,0 +1,23 @@
+
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/ui_button.css"/>
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/ui_button.js"/>
+    </scripts>
+
+    <Panel hittest="false">
+        <Panel class="UIShopButtonBox">
+            <Panel id="UIShopButton" class="UIShopButton" >
+                <Panel class="goldIcon"></Panel>
+                <Label id="shopButtonText" class="shopButtonText" />
+            </Panel>
+            <Panel id="UIPlayerStatusButton" class="UIPlayerStatusButton" onactivate="playerStatusActive()">
+                <Panel class="statusIcon"></Panel>
+                <Label id="playerStatusButton" class="playerStatusButton" text="信息板" />
+            </Panel>
+        </Panel> 
+    </Panel> 
+
+</root>

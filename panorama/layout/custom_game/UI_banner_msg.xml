@@ -1,0 +1,19 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/ui_banner_msg.css"/>
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/ui_banner_msg.js"/>
+    </scripts>
+    
+    <Panel class="UIBannerMsgBox"> 
+        <Panel class="UIBannerMsgBG">
+            <Panel class="roundCountBox">
+                <Label id="roundCountValue" class="roundCountValue" />
+            </Panel>
+            <Panel class="timeCountBox">
+                <Label id="timeCountValue" class="timeCountValue"/>
+            </Panel>
+        </Panel>
+    </Panel>
+</root>
