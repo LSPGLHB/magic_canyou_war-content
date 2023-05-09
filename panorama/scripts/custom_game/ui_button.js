@@ -4,8 +4,9 @@ GameEvents.Subscribe( "checkShopLUATOJS", checkShopLUATOJS)
 function checkShopLUATOJS(data){
     var shopFlag = data.flag
     var playerGold = data.playerGold
-    var shopUI = $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements")
-    var UIShopButton = shopUI.FindChildTraverse("UIShopButton")
+    //var shopUI = $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements")
+    //var UIShopButton = shopUI.FindChildTraverse("UIShopButton")
+    var UIShopButton =  $('#UIShopButton')
     var shopButtonText = UIShopButton.FindChildTraverse("shopButtonText")
     //$.Msg(playerGold)
     if (shopFlag == "active" ){
@@ -25,8 +26,9 @@ function checkShopLUATOJS(data){
 }
 
 function shopActive(){
-    var shopUI = $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements")
-    var UIShopButton = shopUI.FindChildTraverse("UIShopButton")
+    //var shopUI = $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements")
+    //var UIShopButton = shopUI.FindChildTraverse("UIShopButton")
+    var UIShopButton =  $('#UIShopButton')
     var buttonStats = UIShopButton.BHasClass("shopOpen")
     if(buttonStats){
         UIShopButton.RemoveClass("shopOpen")
@@ -50,6 +52,63 @@ function shopClose(){
 function shopUnknow(){
     $.Msg("==============shopUnknow==========")
 }
+
+
+const command = `On${"w"}${Date.now()}`;
+Game.CreateCustomKeyBind("w", `+${command}`);
+Game.AddCommand(
+    `+${command}`,
+    () => {
+        // key down callback
+    },
+    ``,
+    1 << 32
+);
+Game.AddCommand(
+    `-${command}`,
+    () => {
+        // key up callback
+        var UIShopButton =  $('#UIShopButton')
+        var shopOpen = UIShopButton.BHasClass("shopOpen")
+        var shopActive = UIShopButton.BHasClass("shopActive")
+        var shopUnknow = UIShopButton.BHasClass("shopUnknow")
+        if(shopActive){
+            if(shopOpen){
+                UIShopButton.RemoveClass("shopOpen")
+                $.Msg("==============shopClose==========")
+                GameEvents.SendCustomGameEventToServer( "closeShopJSTOLUA", {})
+            }else{
+                UIShopButton.AddClass("shopOpen")
+                $.Msg("==============shopOpen==========")
+                GameEvents.SendCustomGameEventToServer( "openShopJSTOLUA", {})
+            }
+        }else if (shopUnknow){
+            $.Msg("==============shopUnknow==========")
+        }
+
+    },
+    ``,
+    1 << 32
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function playerStatusActive(){
     var mainUI = $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements")

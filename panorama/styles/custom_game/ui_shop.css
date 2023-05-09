@@ -51,12 +51,12 @@
     flow-children:down;
 }
 .itemName{
-    width:160px;
-    padding: 5px 10px 5px;
+    width:180px;
+    padding: 5px 0px 5px 5px;
     height: 30px;
     text-align: left;
     vertical-align: middle;
-    font-size: 23px;
+    font-size: 22px;
     color: #ffffff;
 }
 .itemCostPanel{

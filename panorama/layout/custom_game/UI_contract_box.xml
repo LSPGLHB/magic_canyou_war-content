@@ -10,6 +10,198 @@
        <Panel class="UIContractPanelBG">
             <Panel class="UIContractPanelTitleBox">
                 <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/contract.png"/>
+                <!--Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/abyssal_blade_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/aeon_disk_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/aether_lens_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/aghanims_shard_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ancient_janggo_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/arcane_blink_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/arcane_boots_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/armlet_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/assault_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/basher_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/belt_of_strength_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/bfury_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/black_king_bar_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/blade_mail_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/blade_of_alacrity_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/blades_of_attack_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/blight_stone_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/blink_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/blitz_knuckles_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/blood_grenade_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/bloodstone_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/bloodthorn_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/boots_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/boots_of_bearing_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/boots_of_elves_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/bottle_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/bracer_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/branches_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/broadsword_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/buckler_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/butterfly_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/chainmail_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/circlet_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/clarity_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/claymore_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/cloak_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/cornucopia_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/crimson_guard_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/cyclone_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/dagon_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/demon_edge_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/desolator_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/diadem_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/diffusal_blade_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/disperser_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/dragon_lance_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/dust_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/eagle_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/echo_sabre_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/enchanted_mango_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/energy_booster_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/eternal_shroud_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ethereal_blade_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/faerie_fire_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/falcon_blade_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/flask_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/fluffy_hat_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/force_staff_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/gauntlets_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/gem_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ghost_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/glimmer_cape_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/gloves_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/greater_crit_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/guardian_greaves_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/gungir_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/hand_of_midas_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/harpoon_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/headdress_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/heart_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/heavens_halberd_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/helm_of_iron_will_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/helm_of_the_dominator_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/helm_of_the_overlord_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/holy_locket_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/hurricane_pike_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/hyperstone_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/infused_raindrop_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/invis_sword_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/javelin_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/kaya_and_sange_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/kaya_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/lesser_crit_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/lifesteal_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/lotus_orb_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/maelstrom_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/mage_slayer_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/magic_stick_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/magic_wand_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/manta_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/mantle_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/mask_of_madness_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/medallion_of_courage_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/mekansm_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/meteor_hammer_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/mithril_hammer_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/mjollnir_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/monkey_king_bar_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/moon_shard_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/mystic_staff_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/null_talisman_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/nullifier_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/oblivion_staff_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/octarine_core_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ogre_axe_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/orb_of_corrosion_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/orb_of_venom_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/orchid_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/overwhelming_blink_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/pavise_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/pers_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/phase_boots_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/phylactery_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/pipe_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/platemail_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/point_booster_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/power_treads_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/quarterstaff_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/quelling_blade_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/radiance_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/rapier_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/reaver_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/refresher_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/relic_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/revenants_brooch_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ring_of_basilius_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ring_of_health_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ring_of_protection_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ring_of_regen_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/robe_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/rod_of_atos_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/sacrificial_robe.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/sange_and_yasha_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/satanic_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/shadow_amulet_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/sheepstick_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/shivas_guard_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/silver_edge_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/skadi_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/slippers_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/smoke_of_deceit_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/sobi_mask_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/solar_crest_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/soul_booster_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/soul_ring_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/sphere_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/spirit_vessel_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/staff_of_wizardry_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/swift_blink_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/talisman_of_evasion_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/tango_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/tpscroll_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/tranquil_boots_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/travel_boots_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ultimate_orb_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ultimate_scepter_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/urn_of_shadows_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/vanguard_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/veil_of_discord_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/vitality_booster_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/vladmir_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/void_stone_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/voodoo_mask_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ward_observer_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/ward_sentry_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/wind_lace_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/wind_waker_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/witch_blade_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/wraith_band_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/yasha_and_kaya_lg.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/shop_item/yasha_lg.png"/-->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
                 <Label id="UIContractPanelName" class="UIContractPanelName" text="未签订"/>
             </Panel> 
             <Panel class="UIContractPanelDescribeBox">
