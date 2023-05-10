@@ -53,9 +53,9 @@ function shopUnknow(){
     $.Msg("==============shopUnknow==========")
 }
 
-
-const command = `On${"w"}${Date.now()}`;
-Game.CreateCustomKeyBind("w", `+${command}`);
+//商店快捷键设置
+const command = `On${"Space"}${Date.now()}`;
+Game.CreateCustomKeyBind("Space", `+${command}`);
 Game.AddCommand(
     `+${command}`,
     () => {
