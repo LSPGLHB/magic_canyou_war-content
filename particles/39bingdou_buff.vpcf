@@ -1,0 +1,51 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf57:version{4f75132e-4f5d-493c-958e-3bb4328089ba} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nMaxParticles = 0
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_SetSingleControlPointPosition"
+			m_vecCP1Pos = [ 0.0, 0.0, 50.0 ]
+			m_transformInput = 
+			{
+			}
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/39bingdou_buff_1.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/39bingdou_buff_2.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/39bingdou_buff_3.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/39bingdou_buff_4.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/39bingdou_buff_5.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/39bingdou_buff_6.vpcf"
+		},
+	]
+}
