@@ -1,0 +1,121 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf57:version{4f75132e-4f5d-493c-958e-3bb4328089ba} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_nBehaviorVersion = 5
+	m_nFirstMultipleOverride_BackwardCompat = 1
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 1.0
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphereTransform"
+			m_TransformInput = 
+			{
+				m_nControlPoint = 3
+			}
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [ 0.0, 0.0, 512.0 ]
+			m_OffsetMax = [ 0.0, 0.0, 512.0 ]
+			m_TransformInput = 
+			{
+				m_nControlPoint = 3
+			}
+		},
+		{
+			_class = "C_INIT_VelocityRandom"
+			m_LocalCoordinateSystemSpeedMin = [ 0.0, 0.0, -1000.0 ]
+			m_LocalCoordinateSystemSpeedMax = [ 0.0, 0.0, -1000.0 ]
+		},
+		{
+			_class = "C_INIT_LifespanFromVelocity"
+			m_flMaxTraceLength = 2048.0
+			m_CollisionGroupName = "DEBRIS"
+		},
+	]
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_2.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_1.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_3.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_4.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_5.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_6.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_7.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_8.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_9.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_10.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_11.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_12.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_13.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_14.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/27zhaozedidai_baozha_15.vpcf"
+		},
+	]
+}

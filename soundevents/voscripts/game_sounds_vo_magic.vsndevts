@@ -23,6 +23,19 @@
                             "value0"    "sounds/weapons/hero/void_spirit/attack_layer02.vsnd"
 }   }   }   }   }   }   }
 
+"magic_defence"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/keeper/wisp_destroy.vsnd"
+}   }   }   }   }   }   }
+
+
 //火系共用
 "magic_fire_power_up"{
     "operator_stacks"{
@@ -826,4 +839,76 @@
                     "vsnd_files"{
                         "value"{
                             "value0"    "sounds/weapons/hero/viper/nose_dive_impact.vsnd"
+}   }   }   }   }   }   }
+
+"magic_fire_spirit_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/snapfire/magma01.vsnd"
+}   }   }   }   }   }   }
+
+"magic_fire_spirit_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/viper/nose_dive_impact.vsnd"
+}   }   }   }   }   }   }
+
+"magic_control_rock_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/elder_titan/earth_split_cast.vsnd"
+}   }   }   }   }   }   }
+
+"magic_control_rock_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/undying/tombstone_grab.vsnd"
+}   }   }   }   }   }   }
+
+"magic_blind_fire_ball_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/skywrath/arcane_bolt_cast.vsnd"
+}   }   }   }   }   }   }
+
+"magic_blind_fire_ball_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/skywrath/arcane_bolt_target.vsnd"
 }   }   }   }   }   }   }
