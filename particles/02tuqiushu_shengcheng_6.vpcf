@@ -615,8 +615,8 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMin = [ 234, 148, 0 ]
-			m_ColorMax = [ 212, 155, 0 ]
+			m_ColorMin = [ 234, 195, 0 ]
+			m_ColorMax = [ 212, 212, 0 ]
 		},
 		{
 			_class = "C_INIT_InitFloat"
@@ -661,6 +661,7 @@
 		{
 			_class = "C_OP_BasicMovement"
 			m_fDrag = 0.05
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_InterpolateRadius"

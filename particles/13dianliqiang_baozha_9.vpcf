@@ -40,7 +40,7 @@
 			_class = "C_INIT_InitFloat"
 			m_InputValue = 
 			{
-				m_nType = "PF_TYPE_CONTROL_POINT_COMPONENT"
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
 				m_nMapType = "PF_MAP_TYPE_MULT"
 				m_flLiteralValue = 0.0
 				m_NamedValue = ""
@@ -70,6 +70,7 @@
 				m_flNoiseTurbulenceMix = 0.5
 				m_flNoiseImgPreviewScale = 1.0
 				m_bNoiseImgPreviewLive = true
+				m_bUseBoundsCenter = false
 				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
 				m_flMultFactor = 1.0
 				m_flInput0 = 0.0

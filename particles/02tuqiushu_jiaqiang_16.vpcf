@@ -216,7 +216,7 @@
 		{
 			_class = "C_INIT_RandomColor"
 			m_ColorMax = [ 24, 113, 255 ]
-			m_ColorMin = [ 44, 163, 255 ]
+			m_ColorMin = [ 255, 181, 43 ]
 		},
 		{
 			_class = "C_INIT_CreateWithinSphereTransform"
@@ -328,6 +328,10 @@
 			{
 				m_nControlPoint = 3
 			}
+		},
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_ColorFade = [ 86, 176, 255 ]
 		},
 	]
 	m_Constraints = 

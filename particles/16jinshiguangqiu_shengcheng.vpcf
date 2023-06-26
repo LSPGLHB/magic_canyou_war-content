@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf51:version{6d03d500-2498-454e-b833-f654e870bb3d} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf57:version{4f75132e-4f5d-493c-958e-3bb4328089ba} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
@@ -35,7 +35,6 @@
 			_class = "C_INIT_CreateWithinSphereTransform"
 			m_TransformInput = 
 			{
-				m_nType = "PT_TYPE_CONTROL_POINT"
 				m_nControlPoint = 3
 			}
 		},
@@ -54,7 +53,15 @@
 		},
 		{
 			_class = "C_INIT_CreateOnModel"
-			m_nControlPointNumber = 3
+			m_transformInput = 
+			{
+				m_nControlPoint = 3
+			}
+			m_modelInput = 
+			{
+				m_nType = "PM_TYPE_CONTROL_POINT"
+				m_nControlPoint = 3
+			}
 		},
 	]
 	m_Operators = 
@@ -67,7 +74,6 @@
 			_class = "C_OP_PositionLock"
 			m_TransformInput = 
 			{
-				m_nType = "PT_TYPE_CONTROL_POINT"
 				m_nControlPoint = 3
 			}
 			m_flStartTime_min = 0.0

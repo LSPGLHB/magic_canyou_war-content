@@ -10,7 +10,6 @@
 	[
 		{
 			m_name = "preview"
-			m_drivers = [  ]
 		},
 	]
 	m_Emitters = 
@@ -608,6 +607,7 @@
 	[
 		{
 			_class = "C_OP_BasicMovement"
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_InterpolateRadius"
