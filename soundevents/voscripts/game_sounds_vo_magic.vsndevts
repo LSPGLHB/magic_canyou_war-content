@@ -912,3 +912,27 @@
                         "value"{
                             "value0"    "sounds/weapons/hero/skywrath/arcane_bolt_target.vsnd"
 }   }   }   }   }   }   }
+
+"magic_glare_light_ball_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/puck/phase_shift.vsnd"
+}   }   }   }   }   }   }
+
+"magic_glare_light_ball_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/vo/wisp/purchase_scepter.vsnd"
+}   }   }   }   }   }   }
