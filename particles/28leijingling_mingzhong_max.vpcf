@@ -257,5 +257,8 @@
 		{
 			m_ChildRef = resource:"particles/28leijingling_mingzhong_4.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/28leijingling_mingzhong_5.vpcf"
+		},
 	]
 }
