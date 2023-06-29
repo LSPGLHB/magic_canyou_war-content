@@ -115,7 +115,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 0.8
+				m_flLiteralValue = 2.0
 				m_NamedValue = ""
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
@@ -169,7 +169,7 @@
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/45feifu_mingzhong_1_1.vpcf"
+			m_ChildRef = resource:"particles/45feifu_mingzhong_max_1_1.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/45feifu_mingzhong_1_2.vpcf"

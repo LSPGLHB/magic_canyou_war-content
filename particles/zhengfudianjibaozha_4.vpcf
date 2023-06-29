@@ -259,6 +259,10 @@
 			m_flMaxTraceLength = 1024.0
 			m_flTraceOffset = 256.0
 			m_CollisionGroupName = "DEBRIS"
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_OP_PositionLock"
 		},
 	]
 	m_ForceGenerators = 
@@ -271,6 +275,7 @@
 				m_flLiteralValue = -4.0
 			}
 			m_fFalloffPower = -1.0
+			m_bDisableOperator = true
 		},
 	]
 	m_Renderers = 

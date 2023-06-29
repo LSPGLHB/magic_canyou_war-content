@@ -27,6 +27,7 @@
 			m_transformInput = 
 			{
 			}
+			m_bDisableOperator = true
 		},
 	]
 	m_Emitters = 
@@ -345,6 +346,7 @@
 			m_RateMax = [ 8.0, 8.0, 8.0 ]
 			m_RateMin = [ -8.0, -8.0, -8.0 ]
 			m_FrequencyMin = [ 2.0, 2.0, 2.0 ]
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_OscillateVector"
@@ -352,6 +354,7 @@
 			m_RateMin = [ -80.0, -80.0, -80.0 ]
 			m_RateMax = [ 80.0, 80.0, 80.0 ]
 			m_FrequencyMax = [ 18.0, 18.0, 18.0 ]
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_OscillateScalar"
@@ -371,6 +374,7 @@
 			m_FrequencyMin = 8.0
 			m_FrequencyMax = 25.0
 			m_bProportional = false
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_FadeOutSimple"
@@ -384,6 +388,7 @@
 			m_FrequencyMin = [ 0.1, 0.1, 0.1 ]
 			m_RateMax = [ 12.0, 12.0, 12.0 ]
 			m_RateMin = [ -12.0, -12.0, -12.0 ]
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_InterpolateRadius"
@@ -401,6 +406,10 @@
 		{
 			_class = "C_OP_SetCPtoVector"
 			m_nFieldOutput = 17
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_OP_PositionLock"
 		},
 	]
 	m_ForceGenerators = 
@@ -413,6 +422,7 @@
 				m_nType = "PF_TYPE_LITERAL"
 				m_flLiteralValue = -4.0
 			}
+			m_bDisableOperator = true
 		},
 	]
 	m_Renderers = 
@@ -933,12 +943,14 @@
 				m_vRandomMin = [ 0.0, 0.0, 0.0 ]
 				m_vRandomMax = [ 0.0, 0.0, 0.0 ]
 			}
+			m_bDisableOperator = true
 		},
 	]
 	m_Children = 
 	[
 		{
 			m_ChildRef = resource:"particles/zhengfudianjibaozha_1.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/zhengfudianjibaozha_2.vpcf"
