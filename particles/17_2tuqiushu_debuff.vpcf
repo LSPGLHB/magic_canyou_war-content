@@ -100,8 +100,8 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMax = [ 255, 212, 0 ]
-			m_ColorMin = [ 243, 255, 80 ]
+			m_ColorMax = [ 0, 254, 255 ]
+			m_ColorMin = [ 78, 255, 137 ]
 		},
 		{
 			_class = "C_INIT_InitFloat"
@@ -203,14 +203,15 @@
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/wiltexiao/tuxi/17_1tuqiushu_debuff_1.vpcf"
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/17_2tuqiushu_debuff_1.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/wiltexiao/tuxi/17_1tuqiushu_debuff_2.vpcf"
 			m_flDelay = 1.5
+			m_bDisableChild = true
 		},
 		{
-			m_ChildRef = resource:"particles/wiltexiao/tuxi/02tuqiushu_debuff_3.vpcf"
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/17_2tuqiushu_debuff_3.vpcf"
 		},
 	]
 }

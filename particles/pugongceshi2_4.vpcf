@@ -2,8 +2,9 @@
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
-	m_nMaxParticles = 96
-	m_flConstantRadius = 96.0
+	m_nMaxParticles = 16
+	m_ConstantColor = [ 103, 255, 103, 255 ]
+	m_bShouldSort = false
 	m_nBehaviorVersion = 5
 	m_controlPointConfigurations = 
 	[
@@ -12,6 +13,7 @@
 			m_drivers = 
 			[
 				{
+					m_iControlPoint = 3
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
 				},
@@ -23,14 +25,6 @@
 			]
 		},
 	]
-	m_PreEmissionOperators = 
-	[
-		{
-			_class = "C_OP_HSVShiftToCP"
-			m_DefaultHSVColor = [ 75, 64, 190, null ]
-			m_bDisableOperator = true
-		},
-	]
 	m_Emitters = 
 	[
 		{
@@ -38,7 +32,7 @@
 			m_flEmitRate = 
 			{
 				m_nType = "PF_TYPE_LITERAL"
-				m_flLiteralValue = 90.0
+				m_flLiteralValue = 40.0
 			}
 		},
 	]
@@ -49,11 +43,21 @@
 			m_InputValue = 
 			{
 				m_nType = "PF_TYPE_RANDOM_UNIFORM"
-				m_flRandomMin = 0.15
-				m_flRandomMax = 0.4
+				m_flRandomMin = 0.235
+				m_flRandomMax = 0.25
 				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
 			}
 			m_nOutputField = 1
+		},
+		{
+			_class = "C_INIT_InitFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 82.0
+				m_flRandomMax = 142.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+			}
 		},
 		{
 			_class = "C_INIT_CreateWithinSphereTransform"
@@ -76,34 +80,19 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMin = [ 160, 249, 255, 255 ]
-			m_ColorMax = [ 160, 249, 255, 255 ]
-		},
-		{
-			_class = "C_INIT_InitFloat"
-			m_InputValue = 
-			{
-				m_nType = "PF_TYPE_RANDOM_UNIFORM"
-				m_flRandomMin = 0.0
-				m_flRandomMax = 360.0
-				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
-				m_bHasRandomSignFlip = true
-			}
-			m_nOutputField = 12
-		},
-		{
-			_class = "C_INIT_InitFloat"
-			m_InputValue = 
-			{
-				m_nType = "PF_TYPE_RANDOM_UNIFORM"
-				m_flRandomMin = 80.0
-				m_flRandomMax = 112.0
-				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
-			}
+			m_ColorMin = [ 212, 212, 212 ]
 		},
 	]
 	m_Operators = 
 	[
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 0.0
+			m_flBias = 0.655
+		},
 		{
 			_class = "C_OP_Decay"
 		},
@@ -113,45 +102,33 @@
 		},
 		{
 			_class = "C_OP_FadeOutSimple"
-			m_flFadeOutTime = 0.8
-		},
-		{
-			_class = "C_OP_OscillateVector"
-			m_RateMin = [ -3.0, -3.0, -3.0 ]
-			m_RateMax = [ 3.0, 3.0, 3.0 ]
-			m_FrequencyMax = [ 3.0, 3.0, 3.0 ]
-		},
-		{
-			_class = "C_OP_BasicMovement"
-			m_Gravity = [ 0.0, 0.0, 50.0 ]
-			m_fDrag = 0.05
+			m_flFadeOutTime = 0.7
 		},
 		{
 			_class = "C_OP_PositionLock"
+			m_flStartTime_min = 0.0
+			m_flStartTime_max = 0.0
 			m_TransformInput = 
 			{
 				m_nControlPoint = 3
 			}
-		},
-		{
-			_class = "C_OP_ColorInterpolate"
-			m_ColorFade = [ 94, 62, 199, 255 ]
-		},
-		{
-			_class = "C_OP_InterpolateRadius"
-			m_flBias = 0.75
-			m_flStartScale = 3.0
 		},
 	]
 	m_Renderers = 
 	[
 		{
 			_class = "C_OP_RenderSprites"
+			VisibilityInputs = 
+			{
+				m_nCPin = 3
+				m_flProxyRadius = 4.0
+			}
+			m_bDisableZBuffering = true
 			m_nHSVShiftControlPoint = 62
 			m_vecTexturesInput = 
 			[
 				{
-					m_hTexture = resource:"materials/particle/particle_flares/particle_flare_006.vtex"
+					m_hTexture = resource:"materials/particle/particle_flares/aircraft_white.vtex"
 				},
 			]
 			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
@@ -159,7 +136,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 0.5
+				m_flLiteralValue = 1.5
 				m_NamedValue = ""
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
@@ -187,6 +164,7 @@
 				m_flNoiseTurbulenceMix = 0.5
 				m_flNoiseImgPreviewScale = 1.0
 				m_bNoiseImgPreviewLive = true
+				m_bUseBoundsCenter = false
 				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
 				m_flMultFactor = 1.0
 				m_flInput0 = 0.0
@@ -207,50 +185,6 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
-		},
-	]
-	m_Children = 
-	[
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_1.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_2.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_3.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_4.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_5.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_6.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_7.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_8.vpcf"
-		},
-		{
-			m_bEndCap = true
-			m_ChildRef = resource:"particles/13dianliqiang_jiluo.vpcf"
-			m_bDisableChild = true
-		},
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_9.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_10.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_shengcheng_11.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/13dianliqiang_baozha_yanchizhuangtai.vpcf"
 		},
 	]
 }
