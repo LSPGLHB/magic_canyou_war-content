@@ -2,10 +2,11 @@
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
-	m_nMaxParticles = 15
-	m_ConstantColor = [ 63, 118, 186, 255 ]
+	m_nMaxParticles = 8
+	m_flConstantRadius = 8.0
+	m_ConstantColor = [ 0, 78, 255, 255 ]
 	m_nBehaviorVersion = 5
-	m_nFirstMultipleOverride_BackwardCompat = 5
+	m_nFirstMultipleOverride_BackwardCompat = 8
 	m_controlPointConfigurations = 
 	[
 		{
@@ -13,11 +14,6 @@
 			m_drivers = 
 			[
 				{
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-				{
-					m_iControlPoint = 1
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
 				},
@@ -31,30 +27,8 @@
 			m_nParticlesToEmit = 
 			{
 				m_nType = "PF_TYPE_LITERAL"
-				m_flLiteralValue = 3.0
-			}
-		},
-	]
-	m_Initializers = 
-	[
-		{
-			_class = "C_INIT_InitFloat"
-			m_InputValue = 
-			{
-				m_nType = "PF_TYPE_RANDOM_UNIFORM"
-				m_flRandomMin = 0.607843
-				m_flRandomMax = 1.117647
-				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
-			}
-			m_nOutputField = 7
-		},
-		{
-			_class = "C_INIT_InitFloat"
-			m_InputValue = 
-			{
-				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 2.0
+				m_flLiteralValue = 10.0
 				m_NamedValue = ""
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
@@ -82,6 +56,7 @@
 				m_flNoiseTurbulenceMix = 0.5
 				m_flNoiseImgPreviewScale = 1.0
 				m_bNoiseImgPreviewLive = true
+				m_bUseBoundsCenter = false
 				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
 				m_flMultFactor = 1.0
 				m_flInput0 = 0.0
@@ -102,14 +77,36 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
-			m_nOutputField = 1
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphereTransform"
+			m_fSpeedMin = 250.0
+			m_fSpeedMax = 400.0
+			m_fRadiusMax = 20.0
 		},
 		{
 			_class = "C_INIT_InitFloat"
 			m_InputValue = 
 			{
 				m_nType = "PF_TYPE_RANDOM_UNIFORM"
-				m_flRandomMin = 180.0
+				m_flRandomMin = 0.75
+				m_flRandomMax = 0.8
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+			}
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [ 255, 198, 61, 255 ]
+		},
+		{
+			_class = "C_INIT_InitFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 0.0
 				m_flRandomMax = 360.0
 				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
 				m_bHasRandomSignFlip = true
@@ -117,87 +114,129 @@
 			m_nOutputField = 4
 		},
 		{
-			_class = "C_INIT_CreateWithinSphereTransform"
+			_class = "C_INIT_InitFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 1.0
+				m_flRandomMax = 1.5
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+			}
+			m_nOutputField = 1
+		},
+		{
+			_class = "C_INIT_InitFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 0.0
+				m_flRandomMax = 360.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_bHasRandomSignFlip = true
+			}
+			m_nOutputField = 12
+		},
+		{
+			_class = "C_INIT_InitFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 0.8
+			}
+		},
+		{
+			_class = "C_INIT_InitFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 0.0
+				m_flRandomMax = 360.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_bHasRandomSignFlip = true
+			}
+			m_nOutputField = 4
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_vecOutputMin = [ 0.0, 0.0, 500.0 ]
+			m_vecOutputMax = [ 0.0, 0.0, 600.0 ]
 			m_TransformInput = 
 			{
-				m_nControlPoint = 3
+				m_nType = "PT_TYPE_INVALID"
 			}
-		},
-		{
-			_class = "C_INIT_InitFloat"
-			m_InputValue = 
-			{
-				m_nType = "PF_TYPE_RANDOM_BIASED"
-				m_flRandomMin = 0.25
-				m_flRandomMax = 0.75
-				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
-				m_nBiasType = "PF_BIAS_TYPE_EXPONENTIAL"
-				m_flBiasParameter = 0.5
-			}
-		},
-		{
-			_class = "C_INIT_InitFloat"
-			m_InputValue = 
-			{
-				m_flInput0 = 0.0
-				m_flInput1 = 1000.0
-				m_flOutput0 = 0.0
-				m_flOutput1 = 1000.0
-				m_nMapType = "PF_MAP_TYPE_REMAP"
-				m_nType = "PF_TYPE_CONTROL_POINT_COMPONENT"
-				m_nControlPoint = 1
-				m_nVectorComponent = 0
-			}
-			m_nSetMethod = "PARTICLE_SET_SCALE_INITIAL_VALUE"
 		},
 	]
 	m_Operators = 
 	[
 		{
 			_class = "C_OP_Decay"
-			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
 		},
 		{
-			_class = "C_OP_FadeInSimple"
+			_class = "C_OP_RampScalarSpline"
+			m_RateMax = 15.0
+			m_RateMin = -15.0
+			m_nField = 12
 		},
 		{
-			_class = "C_OP_FadeOutSimple"
+			_class = "C_OP_RampScalarSpline"
+			m_nField = 20
+			m_RateMin = -10.0
+			m_RateMax = 10.0
 		},
 		{
-			_class = "C_OP_Spin"
-			m_nSpinRateMinDegrees = 2
-			m_nSpinRateDegrees = 1
+			_class = "C_OP_RampScalarSpline"
+			m_RateMax = 15.0
+			m_RateMin = -15.0
+			m_nField = 4
 		},
 		{
-			_class = "C_OP_RampScalarLinearSimple"
-			m_flEndTime = 999.0
-			m_Rate = 140.0
+			_class = "C_OP_RotateVector"
+			m_flOpEndFadeOutTime = 1.6
+			m_flOpStartFadeOutTime = 0.8
+			m_vecRotAxisMin = [ -1.0, -1.0, -1.0 ]
+			m_vecRotAxisMax = [ 1.0, 1.0, 1.0 ]
+			m_flRotRateMin = -920.0
+			m_flRotRateMax = 920.0
 		},
 		{
-			_class = "C_OP_SetToCP"
-			m_nControlPointNumber = 3
+			_class = "C_OP_FadeAndKill"
+			m_flStartFadeOutTime = 0.8
+			m_flEndFadeInTime = 0.1
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.085
+			m_Gravity = [ 0.0, 0.0, -980.0 ]
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 0.0
+			m_flStartTime = 0.9
 		},
 	]
 	m_Renderers = 
 	[
 		{
-			_class = "C_OP_RenderSprites"
-			m_nOrientationType = "PARTICLE_ORIENTATION_WORLD_Z_ALIGNED"
-			m_nOrientationControlPoint = 0
-			m_vecTexturesInput = 
+			_class = "C_OP_RenderModels"
+			m_ModelList = 
 			[
 				{
-					m_hTexture = resource:"materials/particle/particle_heroring_6.vtex"
+					m_model = resource:"models/particle/coin.vmdl"
 				},
 			]
-			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+			m_bAnimated = true
+			m_nLOD = 1
+			m_bForceLoopingAnimation = true
+			m_modelInput = 
+			{
+			}
 			m_flRadiusScale = 
 			{
-				m_nType = "PF_TYPE_CONTROL_POINT_COMPONENT"
-				m_nMapType = "PF_MAP_TYPE_MULT"
-				m_flLiteralValue = 1.0
+				m_nType = "PF_TYPE_LITERAL"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 1.5
 				m_NamedValue = ""
-				m_nControlPoint = 10
+				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
 				m_nVectorComponent = 0
@@ -225,7 +264,7 @@
 				m_bNoiseImgPreviewLive = true
 				m_bUseBoundsCenter = false
 				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
-				m_flMultFactor = 0.0025
+				m_flMultFactor = 1.0
 				m_flInput0 = 0.0
 				m_flInput1 = 1.0
 				m_flOutput0 = 0.0
