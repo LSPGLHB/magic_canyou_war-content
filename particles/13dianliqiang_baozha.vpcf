@@ -118,6 +118,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/30dalongjuanfeng_baozha_11.vpcf"
+			m_bDisableChild = true
 		},
 	]
 }
