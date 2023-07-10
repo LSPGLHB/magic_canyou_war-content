@@ -173,6 +173,10 @@
 			m_flEndTime = 999.0
 			m_Rate = 140.0
 		},
+		{
+			_class = "C_OP_SetToCP"
+			m_nControlPointNumber = 3
+		},
 	]
 	m_Renderers = 
 	[

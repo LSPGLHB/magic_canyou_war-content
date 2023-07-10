@@ -306,5 +306,8 @@
 			m_ChildRef = resource:"particles/13dianliqiang_jiluo.vpcf"
 			m_bDisableChild = true
 		},
+		{
+			m_ChildRef = resource:"particles/13dianliqiang_baozha_11_1.vpcf"
+		},
 	]
 }
