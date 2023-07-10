@@ -165,6 +165,9 @@
 			_class = "C_OP_FadeIn"
 			m_flFadeInTimeMax = 0.5
 		},
+		{
+			_class = "C_OP_PositionLock"
+		},
 	]
 	m_Renderers = 
 	[

@@ -100,8 +100,8 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMin = [ 124, 250, 166 ]
-			m_ColorMax = [ 110, 254, 255 ]
+			m_ColorMin = [ 127, 250, 123 ]
+			m_ColorMax = [ 109, 255, 206 ]
 		},
 		{
 			_class = "C_INIT_InitFloat"
@@ -164,6 +164,9 @@
 		{
 			_class = "C_OP_FadeIn"
 			m_flFadeInTimeMax = 0.5
+		},
+		{
+			_class = "C_OP_PositionLock"
 		},
 	]
 	m_Renderers = 

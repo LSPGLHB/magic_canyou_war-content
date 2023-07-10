@@ -208,9 +208,10 @@
 		{
 			m_ChildRef = resource:"particles/wiltexiao/tuxi/17_1tuqiushu_debuff_2.vpcf"
 			m_flDelay = 1.5
+			m_bDisableChild = true
 		},
 		{
-			m_ChildRef = resource:"particles/wiltexiao/tuxi/02tuqiushu_debuff_3.vpcf"
+			m_ChildRef = resource:"particles/wiltexiao/tuxi/17_1tuqiushu_debuff_3.vpcf"
 		},
 	]
 }

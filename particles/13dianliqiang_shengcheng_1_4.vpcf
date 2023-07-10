@@ -277,6 +277,7 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+			m_bDisableOperator = true
 		},
 	]
 	m_ForceGenerators = 

@@ -402,6 +402,7 @@
 			m_flMaxTraceLength = 1024.0
 			m_flTraceOffset = 256.0
 			m_CollisionGroupName = "DEBRIS"
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_SetCPtoVector"
@@ -963,6 +964,12 @@
 		},
 		{
 			m_ChildRef = resource:"particles/zhengfudianjibaozha__6.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/23_1zhengfudianji_baozha_7.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/23_1zhengfudianji_baozha_8.vpcf"
 		},
 	]
 }
