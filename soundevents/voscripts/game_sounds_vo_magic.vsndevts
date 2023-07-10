@@ -46,7 +46,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/huskar/burning_spear_cast.vsnd"
+                            "value0"    "sounds/weapons/hero/dragon_knight/dragonknight_fire.vsnd"
 }   }   }   }   }   }   }
 
 "magic_fire_power_down"{
@@ -145,7 +145,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/tiny/tiny_toss_throw.vsnd"
+                            "value0"    "sounds/weapons/hero/brewmaster/thunder_clap.vsnd"
 }   }   }   }   }   }   }
 
 "magic_stone_power_down"{
@@ -194,7 +194,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/tiny/tiny_toss_throw.vsnd"
+                            "value0"    "sounds/weapons/hero/brewmaster/thunder_clap.vsnd"
 }   }   }   }   }   }   }
 
 "magic_soil_power_down"{
@@ -341,7 +341,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/rubick/fade_bolt_target.vsnd"
+                            "value0"    "sounds/weapons/hero/naga_siren/riptide01.vsnd"
 }   }   }   }   }   }   }
 
 "magic_water_power_down"{
@@ -390,7 +390,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/rubick/fade_bolt_target.vsnd"
+                            "value0"    "sounds/weapons/hero/naga_siren/riptide01.vsnd"
 }   }   }   }   }   }   }
 
 "magic_ice_power_down"{
@@ -439,7 +439,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/lich/ice_spire_destroy.vsnd"
+                            "value0"    "sounds/weapons/hero/clinkz/windwalk.vsnd"
 }   }   }   }   }   }   }
 
 "magic_wind_power_down"{
@@ -488,7 +488,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/lich/ice_spire_destroy.vsnd"
+                            "value0"    "sounds/weapons/hero/clinkz/windwalk.vsnd"
 }   }   }   }   }   }   }
 
 "magic_spear_power_down"{
@@ -841,7 +841,7 @@
                             "value0"    "sounds/weapons/hero/viper/nose_dive_impact.vsnd"
 }   }   }   }   }   }   }
 
-"magic_fire_spirit_cast"{
+"magic_fire_spirit_cast_sp1"{
     "operator_stacks"{
         "update_stack"{
             "reference_operator"{
@@ -850,7 +850,19 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/snapfire/magma01.vsnd"
+                            "value0"    "sounds/weapons/hero/snapfire/lizard_blob_projectile.vsnd"
+}   }   }   }   }   }   }
+
+"magic_fire_spirit_cast_sp2"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/phoenix/super_nova_cast.vsnd"
 }   }   }   }   }   }   }
 
 "magic_fire_spirit_boom"{
@@ -862,7 +874,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/viper/nose_dive_impact.vsnd"
+                            "value0"    "sounds/weapons/hero/techies/land_mine02.vsnd"
 }   }   }   }   }   }   }
 
 "magic_control_rock_cast"{
@@ -1081,7 +1093,7 @@
                             "value0"    "sounds/weapons/towers/attack_golem.vsnd"
 }   }   }   }   }   }   }
 
-"magic_trace_stone_ball_hit"{
+"magic_trace_stone_ball_boom"{
     "operator_stacks"{
         "update_stack"{
             "reference_operator"{
@@ -1091,4 +1103,280 @@
                     "vsnd_files"{
                         "value"{
                             "value0"    "sounds/weapons/hero/undying/tombstone_grab.vsnd"
+}   }   }   }   }   }   }
+
+"magic_twice_stone_ball_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/towers/attack_golem.vsnd"
+}   }   }   }   }   }   }
+
+"magic_twice_stone_ball_boom_sp1"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/viper/poison_attack_target_ti7.vsnd"
+}   }   }   }   }   }   }
+
+"magic_twice_stone_ball_boom_sp2"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/alchemist/unstable_concoction_stun01.vsnd"
+}   }   }   }   }   }   }
+
+"magic_x_soil_ball_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/viper/nethertoxin_cast.vsnd"
+}   }   }   }   }   }   }
+
+"magic_x_soil_ball_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/viper/nose_dive_impact.vsnd"
+}   }   }   }   }   }   }
+
+"magic_swamp_area_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/viper/viper_strike.vsnd"
+}   }   }   }   }   }   }
+
+"magic_swamp_area_duration"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/viper/poison_attack_target_ti7.vsnd"
+}   }   }   }   }   }   }
+
+"magic_clay_ball_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/viper/impact.vsnd"
+}   }   }   }   }   }   }
+
+"magic_clay_ball_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/viper/nose_dive_impact.vsnd"
+}   }   }   }   }   }   }
+
+"magic_scatter_soil_ball_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/broodmother/spiderling_hatch.vsnd"
+}   }   }   }   }   }   }
+
+"magic_scatter_soil_ball_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/viper/nose_dive_impact.vsnd"
+}   }   }   }   }   }   }
+
+"magic_electric_wall_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/broodmother/spiderling_hatch.vsnd"
+}   }   }   }   }   }   }
+
+"magic_electric_wall_duration"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/disruptor/kinetic_field_pinfold.vsnd"
+}   }   }   }   }   }   }
+
+"magic_electric_wall_stun"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/zuus/lightning_bolt.vsnd"
+}   }   }   }   }   }   }
+
+"magic_electric_gather_cast_sp1"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/disruptor/kinetic_field.vsnd"
+}   }   }   }   }   }   }
+
+"magic_electric_gather_cast_sp2"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/disruptor/kinetic_field_end.vsnd"
+}   }   }   }   }   }   }
+
+"magic_electric_gather_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/disruptor/attack.vsnd"
+}   }   }   }   }   }   }
+
+"magic_thunder_spirit_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/disruptor/preattack.vsnd"
+}   }   }   }   }   }   }
+
+"magic_thunder_spirit_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/disruptor/preattack.vsnd"
+}   }   }   }   }   }   }
+
+"magic_thunder_spirit_boom_max"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/disruptor/thunder_strike_target.vsnd"
+}   }   }   }   }   }   }
+
+"magic_electric_arrow_cast_sp1"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/razor/static_attack_loop.vsnd"
+}   }   }   }   }   }   }
+
+"magic_electric_arrow_cast_sp2"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/razor/razor_unstable_current.vsnd"
+}   }   }   }   }   }   }
+
+"magic_electric_arrow_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/razor/razor_attack_reg_01.vsnd"
 }   }   }   }   }   }   }
