@@ -272,14 +272,14 @@
 			m_ChildRef = resource:"particles/14vzibingqiu_jiaqiang_6.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/14vzibingqiu_jiaqiang_7.vpcf"
-		},
-		{
 			m_ChildRef = resource:"particles/14vzibingqiu_jiaqiang_8.vpcf"
 			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/14vzibingqiu_jiaqiang_9_.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
 		},
 	]
 }

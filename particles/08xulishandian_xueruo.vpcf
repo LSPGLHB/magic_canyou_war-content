@@ -179,14 +179,14 @@
 			m_ChildRef = resource:"particles/08xulishandian_xueruo_6.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/08xulishandian_xueruo_7.vpcf"
-		},
-		{
 			m_bEndCap = true
 			m_ChildRef = resource:"particles/08xulishandian_shengcheng_8.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/08xulishandian_xueruo_9.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
 		},
 	]
 }

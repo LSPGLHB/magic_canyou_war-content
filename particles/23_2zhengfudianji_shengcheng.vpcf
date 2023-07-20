@@ -195,5 +195,8 @@
 			m_ChildRef = resource:"particles/23_1zhengfudianji_shengcheng_7.vpcf"
 			m_bDisableChild = true
 		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
+		},
 	]
 }

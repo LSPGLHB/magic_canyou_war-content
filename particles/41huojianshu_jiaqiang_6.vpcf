@@ -119,7 +119,7 @@
 		{
 			_class = "C_INIT_RandomColor"
 			m_ColorMin = [ 0, 0, 0 ]
-			m_ColorMax = [ 102, 102, 102 ]
+			m_ColorMax = [ 255, 32, 32 ]
 			m_bDisableOperator = true
 		},
 	]

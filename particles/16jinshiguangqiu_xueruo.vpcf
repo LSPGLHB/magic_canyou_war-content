@@ -124,5 +124,8 @@
 		{
 			m_ChildRef = resource:"particles/16jinshiguangqiu_xueruo_7.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
+		},
 	]
 }

@@ -201,5 +201,8 @@
 		{
 			m_ChildRef = resource:"particles/04bingqiu_xiaoshi_11.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
+		},
 	]
 }

@@ -336,5 +336,8 @@
 		{
 			m_ChildRef = resource:"particles/45feifu_mingzhong_max_1.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/45feifu_mingzhong_max_2.vpcf"
+		},
 	]
 }

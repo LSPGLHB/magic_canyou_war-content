@@ -357,5 +357,8 @@
 		{
 			m_ChildRef = resource:"particles/tuxixueruo.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
+		},
 	]
 }

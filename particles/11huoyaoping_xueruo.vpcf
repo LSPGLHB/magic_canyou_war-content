@@ -336,5 +336,8 @@
 		{
 			m_ChildRef = resource:"particles/wiltexiao/huoxi/sucaiku/11huoyaoping_xueruo_7.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
+		},
 	]
 }

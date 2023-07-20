@@ -1,0 +1,152 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf57:version{4f75132e-4f5d-493c-958e-3bb4328089ba} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nBehaviorVersion = 12
+	m_nMaxParticles = 1
+	m_ConstantColor = [ 0, 0, 0, 255 ]
+	m_flConstantRadius = 2.0
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 1.0
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphereTransform"
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_bDisableOperator = true
+		},
+	]
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+		},
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_SetChildControlPoints"
+			m_nFirstControlPoint = 3
+			m_bSetOrientation = true
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_OP_SetControlPointsToModelParticles"
+			m_nFirstControlPoint = 4
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_TransformInput = 
+			{
+				m_nControlPoint = 3
+			}
+		},
+	]
+	m_ForceGenerators = 
+	[
+		{
+			_class = "C_OP_TurbulenceForce"
+			m_flNoiseCoordScale0 = 0.5
+			m_vecNoiseAmount0 = [ 100.0, 100.0, 100.0 ]
+			m_bDisableOperator = true
+		},
+	]
+	m_Constraints = 
+	[
+		{
+			_class = "C_OP_ConstrainDistance"
+			m_fMaxDistance = 10.0
+			m_bDisableOperator = true
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_vecTexturesInput = 
+			[
+				{
+				},
+			]
+		},
+		{
+			_class = "C_OP_RenderModels"
+			m_ActivityName = "ACT_DOTA_IDLE"
+			m_ModelList = 
+			[
+				{
+					m_model = resource:"models/particle/sphere.vmdl"
+				},
+			]
+			m_bIgnoreNormal = true
+			m_bAnimated = true
+			m_bForceLoopingAnimation = true
+			m_nSkin = 2
+			m_modelInput = 
+			{
+			}
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/36ciyanguangbo_xueruo_1.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/36ciyanguangbo_xueruo_2.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/36ciyanguangbo_xueruo_3.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/36ciyanguangbo_xueruo_4.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/36ciyanguangbo_xueruo_5.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/36ciyanguangbo_xueruo_6.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/36ciyanguangbo_xueruo_7.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/36ciyanguangbo_xueruo_8.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/36ciyanguangbo_xueruo_9.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/wiltexiao/huoxi/36ciyanguangbo_jiaqiang_11.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/36ciyanguangbo_xueruo_12.vpcf"
+		},
+	]
+}

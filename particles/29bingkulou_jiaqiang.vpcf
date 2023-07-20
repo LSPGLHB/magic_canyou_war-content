@@ -105,9 +105,6 @@
 			m_ChildRef = resource:"particles/29bingkulou_jiaqiang_3.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/29bingkulou_jiaqiang_4.vpcf"
-		},
-		{
 			m_ChildRef = resource:"particles/29bingkulou_jiaqiang_5.vpcf"
 		},
 		{
@@ -127,6 +124,9 @@
 		},
 		{
 			m_ChildRef = resource:"particles/29bingkulou_jiaqiang_9.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
 		},
 	]
 }

@@ -147,5 +147,8 @@
 		{
 			m_ChildRef = resource:"particles/09shuijingling_jiaqiang_18.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
+		},
 	]
 }

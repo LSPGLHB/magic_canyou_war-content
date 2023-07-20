@@ -200,5 +200,8 @@
 		{
 			m_ChildRef = resource:"particles/13dianliqiang_xueruo_9.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
+		},
 	]
 }

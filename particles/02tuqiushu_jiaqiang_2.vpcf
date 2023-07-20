@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf51:version{6d03d500-2498-454e-b833-f654e870bb3d} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf57:version{4f75132e-4f5d-493c-958e-3bb4328089ba} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
@@ -77,7 +77,6 @@
 			m_fRadiusMin = 2.0
 			m_TransformInput = 
 			{
-				m_nType = "PT_TYPE_CONTROL_POINT"
 				m_nControlPoint = 3
 			}
 		},
@@ -222,7 +221,7 @@
 		{
 			_class = "C_INIT_RandomColor"
 			m_ColorMin = [ 188, 169, 0 ]
-			m_ColorMax = [ 158, 129, 0 ]
+			m_ColorMax = [ 255, 224, 100 ]
 		},
 	]
 	m_Operators = 
@@ -247,7 +246,6 @@
 			m_bLockRot = true
 			m_TransformInput = 
 			{
-				m_nType = "PT_TYPE_CONTROL_POINT"
 				m_nControlPoint = 3
 			}
 		},

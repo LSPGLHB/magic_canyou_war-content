@@ -218,9 +218,6 @@
 			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_2.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_3.vpcf"
-		},
-		{
 			m_ChildRef = resource:"particles/13dianliqiang_jiaqiang_4.vpcf"
 		},
 		{
@@ -251,6 +248,9 @@
 		},
 		{
 			m_ChildRef = resource:"particles/13dianliqiang_baozha_yanchizhuangtai.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
 		},
 	]
 }

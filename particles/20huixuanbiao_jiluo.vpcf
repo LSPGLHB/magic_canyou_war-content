@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf54:version{326b1595-45e8-4004-aa5a-3e08655ff51f} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf57:version{4f75132e-4f5d-493c-958e-3bb4328089ba} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_nMaxParticles = 12
@@ -8,7 +8,6 @@
 	[
 		{
 			m_name = "preview"
-			m_drivers = [  ]
 		},
 	]
 	m_Emitters = 
@@ -333,20 +332,18 @@
 					m_hTexture = resource:"materials/particle/smoke1/smoke1.vtex"
 				},
 			]
-			m_bDisableOperator = true
 		},
 	]
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/20huixuanbiao_mingzhong_1.vpcf"
-			m_bDisableChild = true
+			m_ChildRef = resource:"particles/20huixuanbiao_jiluo_1.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/20huixuanbiao_mingzhong_2.vpcf"
+			m_ChildRef = resource:"particles/20huixuanbiao_jiluo_2.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/20huixuanbiao_mingzhong_3.vpcf"
+			m_ChildRef = resource:"particles/20huixuanbiao_jiluo_3.vpcf"
 		},
 	]
 }

@@ -1757,6 +1757,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/34_2bingerlianjian_jiaqiang_13.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/34_2bingerlianjian_jiaqiang_14.vpcf"
@@ -1783,6 +1784,9 @@
 		},
 		{
 			m_ChildRef = resource:"particles/34_1bingerlianjian_jiaqiang_11.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
 		},
 	]
 }

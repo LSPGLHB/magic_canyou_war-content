@@ -11,18 +11,7 @@
 	[
 		{
 			m_name = "preview"
-			m_drivers = 
-			[
-				{
-					m_iControlPoint = 2
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-				{
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-			]
+			m_drivers = [  ]
 		},
 	]
 	m_Emitters = 
@@ -601,6 +590,10 @@
 				m_vRandomMin = [ 0.0, 0.0, 0.0 ]
 				m_vRandomMax = [ 0.0, 0.0, 0.0 ]
 			}
+			m_TransformInput = 
+			{
+				m_nControlPoint = 3
+			}
 		},
 		{
 			_class = "C_INIT_PositionOffset"
@@ -1068,7 +1061,7 @@
 			}
 			m_TransformInput = 
 			{
-				m_nControlPoint = 2
+				m_nControlPoint = 3
 			}
 		},
 		{
@@ -1084,7 +1077,7 @@
 			m_OffsetMin = 
 			{
 				m_nType = "PVEC_TYPE_LITERAL"
-				m_vLiteralValue = [ 0.0, 0.0, 200.0 ]
+				m_vLiteralValue = [ 0.0, 0.0, 300.0 ]
 				m_LiteralColor = [ 0, 0, 0 ]
 				m_NamedValue = ""
 				m_bFollowNamedValue = false
@@ -1321,7 +1314,7 @@
 			m_OffsetMax = 
 			{
 				m_nType = "PVEC_TYPE_LITERAL"
-				m_vLiteralValue = [ 0.0, 0.0, 200.0 ]
+				m_vLiteralValue = [ 0.0, 0.0, 300.0 ]
 				m_LiteralColor = [ 0, 0, 0 ]
 				m_NamedValue = ""
 				m_bFollowNamedValue = false
@@ -1621,12 +1614,12 @@
 			_class = "C_OP_PositionLock"
 			m_TransformInput = 
 			{
-				m_nControlPoint = 2
+				m_nControlPoint = 3
 			}
 		},
 		{
 			_class = "C_OP_BasicMovement"
-			m_Gravity = [ 0.0, 0.0, 50.0 ]
+			m_Gravity = [ 0.0, 0.0, 200.0 ]
 			m_fDrag = 0.05
 		},
 		{

@@ -102,9 +102,6 @@
 			m_bDisableChild = true
 		},
 		{
-			m_ChildRef = resource:"particles/29bingkulou_xueruo_4.vpcf"
-		},
-		{
 			m_ChildRef = resource:"particles/29bingkulou_xueruo_5.vpcf"
 			m_bDisableChild = true
 		},
@@ -122,6 +119,9 @@
 		},
 		{
 			m_ChildRef = resource:"particles/29bingkulou_xueruo_8.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
 		},
 	]
 }

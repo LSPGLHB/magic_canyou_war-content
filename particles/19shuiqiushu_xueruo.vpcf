@@ -139,14 +139,14 @@
 			m_bDisableChild = true
 		},
 		{
-			m_ChildRef = resource:"particles/19shuiqiushu_xueruo_12.vpcf"
-		},
-		{
 			m_ChildRef = resource:"particles/19shuiqiushu_jiaqiang_13.vpcf"
 			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/19shuiqiushu_xueruo_14.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
 		},
 	]
 }

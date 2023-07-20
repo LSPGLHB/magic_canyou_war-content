@@ -391,6 +391,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/27zhaozedidai_jiaqiang_8.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/27zhaozedidai_jiaqiang_9.vpcf"

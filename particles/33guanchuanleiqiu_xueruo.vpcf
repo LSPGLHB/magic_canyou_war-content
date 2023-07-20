@@ -215,9 +215,6 @@
 			m_ChildRef = resource:"particles/33guanchuanleiqiu_xueruo_2.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/33guanchuanleiqiu_xueruo_3.vpcf"
-		},
-		{
 			m_ChildRef = resource:"particles/33guanchuanleiqiu_xueruo_4.vpcf"
 		},
 		{
@@ -239,6 +236,9 @@
 		},
 		{
 			m_ChildRef = resource:"particles/03dianqiu_xueruo_12.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
 		},
 	]
 }

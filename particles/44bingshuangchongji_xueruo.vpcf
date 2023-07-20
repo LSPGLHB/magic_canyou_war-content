@@ -303,6 +303,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/44bingshuangchongji_xueruo_5.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/44bingshuangchongji_xueruo_6.vpcf"
@@ -323,6 +324,9 @@
 		},
 		{
 			m_ChildRef = resource:"particles/44bingshuangchongji_xueruo_11.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
 		},
 	]
 }

@@ -442,5 +442,8 @@
 		{
 			m_ChildRef = resource:"particles/38dianjian_shengcheng_10.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
+		},
 	]
 }

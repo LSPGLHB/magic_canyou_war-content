@@ -164,9 +164,6 @@
 			m_ChildRef = resource:"particles/18sansheleiqiu_jiaqiang_5.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/18sansheleiqiu_jiaqiang_6.vpcf"
-		},
-		{
 			m_ChildRef = resource:"particles/18sansheleiqiu_jiaqiang_7.vpcf"
 		},
 		{
@@ -182,6 +179,9 @@
 		},
 		{
 			m_ChildRef = resource:"particles/18sansheleiqiu_jiaqiang_10.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
 		},
 	]
 }

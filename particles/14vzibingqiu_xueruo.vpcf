@@ -272,10 +272,10 @@
 			m_ChildRef = resource:"particles/14vzibingqiu_xueruo_6.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/14vzibingqiu_xueruo_7.vpcf"
+			m_ChildRef = resource:"particles/14vzibingqiu_xueruo_8.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/14vzibingqiu_xueruo_8.vpcf"
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
 		},
 	]
 }

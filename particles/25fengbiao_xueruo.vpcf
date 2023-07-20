@@ -500,5 +500,8 @@
 		{
 			m_ChildRef = resource:"particles/05fengjian_xueruo_9.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
+		},
 	]
 }

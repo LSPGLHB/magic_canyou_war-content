@@ -360,5 +360,8 @@
 		{
 			m_ChildRef = resource:"particles/07shitoushu_jiaqiang_8.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
+		},
 	]
 }
