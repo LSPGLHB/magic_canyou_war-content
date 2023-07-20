@@ -140,6 +140,7 @@
 			}
 			m_flMaxTraceLength = 1024.0
 			m_CollisionGroupName = "DEBRIS"
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_INIT_InitFloat"

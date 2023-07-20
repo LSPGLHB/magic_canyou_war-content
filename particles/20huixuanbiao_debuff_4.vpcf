@@ -136,7 +136,7 @@
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/fengzhiwang_debuff_4_1.vpcf"
+			m_ChildRef = resource:"particles/20huixuanbiao_debuff_4_1.vpcf"
 		},
 	]
 }

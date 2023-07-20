@@ -102,6 +102,11 @@
 			m_CollisionGroupName = "DEBRIS"
 			m_flMaxTraceLength = 512.0
 		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [ 218, 255, 161 ]
+			m_ColorMax = [ 220, 255, 96 ]
+		},
 	]
 	m_Operators = 
 	[

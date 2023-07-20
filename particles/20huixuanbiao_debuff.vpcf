@@ -190,6 +190,11 @@
 			m_bActiveRange = true
 			m_nSetMethod = "PARTICLE_SET_SCALE_INITIAL_VALUE"
 		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [ 193, 255, 94 ]
+			m_ColorMax = [ 217, 255, 92 ]
+		},
 	]
 	m_Operators = 
 	[
@@ -267,29 +272,29 @@
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/fengzhiwang_debuff_1.vpcf"
+			m_ChildRef = resource:"particles/20huixuanbiao_debuff_1.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/fengzhiwang_debuff_2.vpcf"
+			m_ChildRef = resource:"particles/20huixuanbiao_debuff_2.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/fengzhiwang_debuff_3.vpcf"
+			m_ChildRef = resource:"particles/20huixuanbiao_debuff_3.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/fengzhiwang_debuff_4.vpcf"
+			m_ChildRef = resource:"particles/20huixuanbiao_debuff_4.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/fengzhiwang_debuff_5.vpcf"
+			m_ChildRef = resource:"particles/20huixuanbiao_debuff_5.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/fengzhiwang_debuff_6.vpcf"
+			m_ChildRef = resource:"particles/20huixuanbiao_debuff_6.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hero_meepo/meepo_earthbind_model_catch.vpcf"
 			m_bDisableChild = true
 		},
 		{
-			m_ChildRef = resource:"particles/fengzhiwang_debuff_7.vpcf"
+			m_ChildRef = resource:"particles/20huixuanbiao_debuff_7.vpcf"
 		},
 		{
 			m_bEndCap = true

@@ -388,7 +388,7 @@
 				m_bNoiseImgPreviewLive = true
 				m_bUseBoundsCenter = false
 				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
-				m_flMultFactor = 1.5
+				m_flMultFactor = 2.0
 				m_flInput0 = 0.0
 				m_flInput1 = 1.0
 				m_flOutput0 = 0.0
@@ -407,6 +407,12 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/13dianliqiang_baozha_yanchizhuangtai_1.vpcf"
 		},
 	]
 }
