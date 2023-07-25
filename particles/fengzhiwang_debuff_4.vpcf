@@ -71,7 +71,7 @@
 		{
 			_class = "C_OP_SetControlPointPositions"
 			m_bUseWorldLocation = true
-			m_vecCP1Pos = [ 96.0, 1.0, 1.0 ]
+			m_vecCP1Pos = [ 190.0, 1.0, 1.0 ]
 			m_vecCP2Pos = [ 88.0, 1.0, 1.0 ]
 			m_vecCP3Pos = [ 64.0, 1.0, 1.0 ]
 			m_vecCP4Pos = [ 88.0, 1.0, 1.0 ]
