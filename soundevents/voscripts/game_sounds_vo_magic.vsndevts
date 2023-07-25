@@ -10,6 +10,132 @@
                             "value0"    ""
 }   }   }   }   }   }   }
 
+"magic_common_attack_sp1_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/chen/attack.vsnd"
+}   }   }   }   }   }   }
+"magic_common_attack_sp1_mis_fire"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/grimstroke/attack01.vsnd"
+}   }   }   }   }   }   }
+"magic_common_attack_sp1_miss"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/grimstroke/attack02.vsnd"
+}   }   }   }   }   }   }
+"magic_common_attack_sp1_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/lion/lion_attack_impact1.vsnd"
+}   }   }   }   }   }   }
+
+"magic_common_attack_sp2_cast"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/grimstroke/attack01.vsnd"
+                            "value1"    "sounds/weapons/hero/grimstroke/attack02.vsnd"
+}   }   }   }   }   }   }
+"magic_common_attack_sp2_mis_fire"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/grimstroke/projectile_impact01.vsnd"
+}   }   }   }   }   }   }
+"magic_common_attack_sp2_miss"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/grimstroke/dark_artistry_cast.vsnd"
+}   }   }   }   }   }   }
+"magic_common_attack_sp2_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/grimstroke/projectile_impact02.vsnd"
+}   }   }   }   }   }   }
+
+"magic_pull_all"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/rubick/spell_steal_target.vsnd"
+}   }   }   }   }   }   }
+
+"magic_push_all"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/axe/counterhelix_blood_chaser.vsnd"
+}   }   }   }   }   }   }
+
+"magic_pull_push_staff"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/items/force_staff.vsnd"
+}   }   }   }   }   }   }
 
 "magic_wake_up"{
     "operator_stacks"{
@@ -1837,7 +1963,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/invoker/mini_tornado03.vsnd"
+                            "value0"    "sounds/weapons/hero/windrunner/powershot_damage04.vsnd"
 }   }   }   }   }   }   }
 
 "magic_whirlwind_axe_cast"{
