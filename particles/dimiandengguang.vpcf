@@ -86,7 +86,7 @@
 		{
 			_class = "C_OP_RenderDeferredLight"
 			m_flRadiusScale = 2.0
-			m_flAlphaScale = 3.0
+			m_flAlphaScale = 2.5
 			m_flStartFalloff = 0.1
 			m_hTexture = resource:"materials/particle/lens_flare/lens_flare.vtex"
 			m_vecColorScale = 

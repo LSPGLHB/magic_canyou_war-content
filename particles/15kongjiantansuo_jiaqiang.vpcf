@@ -409,5 +409,8 @@
 		{
 			m_ChildRef = resource:"particles/fengxijiaqiang.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/dimiandengguang.vpcf"
+		},
 	]
 }

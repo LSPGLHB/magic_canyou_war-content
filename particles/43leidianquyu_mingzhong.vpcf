@@ -12,10 +12,6 @@
 			m_drivers = 
 			[
 				{
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-				{
 					m_iControlPoint = 1
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
@@ -98,6 +94,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/43leidianquyu_mingzhong_5.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/43leidianquyu_mingzhong_5.vpcf"
