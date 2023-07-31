@@ -112,7 +112,7 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMax = [ 161, 161, 161 ]
+			m_ColorMax = [ 207, 207, 207 ]
 		},
 		{
 			_class = "C_INIT_CreateWithinSphereTransform"
@@ -139,7 +139,7 @@
 		},
 		{
 			_class = "C_OP_BasicMovement"
-			m_Gravity = [ 0.0, 0.0, 2.0 ]
+			m_Gravity = [ 1000.0, 0.0, 2.0 ]
 			m_fDrag = 0.01
 		},
 		{
@@ -173,7 +173,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 2.0
+				m_flLiteralValue = 2.5
 				m_NamedValue = ""
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
@@ -222,6 +222,15 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/fengxifashe_feng_1.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/fengxifashe_feng_2.vpcf"
 		},
 	]
 }

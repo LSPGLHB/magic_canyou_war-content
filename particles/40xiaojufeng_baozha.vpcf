@@ -1289,5 +1289,8 @@
 		{
 			m_ChildRef = resource:"particles/40xiaojufeng_mingzhong_6.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/40xiaojufeng_baozha_6.vpcf"
+		},
 	]
 }

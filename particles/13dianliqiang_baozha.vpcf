@@ -116,7 +116,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/13dianliqiang_baozha_9.vpcf"
-			m_bDisableChild = true
+			m_flDelay = 0.5
 		},
 		{
 			m_ChildRef = resource:"particles/13dianliqiang_baozha_10.vpcf"
@@ -135,6 +135,10 @@
 		},
 		{
 			m_ChildRef = resource:"particles/13dianliqiang_baozha_14.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/dianliqiang_dixialeidian.vpcf"
+			m_bDisableChild = true
 		},
 	]
 }
