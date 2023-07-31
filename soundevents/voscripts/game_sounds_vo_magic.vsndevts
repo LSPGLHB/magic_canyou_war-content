@@ -10,6 +10,18 @@
                             "value0"    ""
 }   }   }   }   }   }   }
 
+"magic_beat_back"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/tiny/tiny_toss_impact.vsnd"
+}   }   }   }   }   }   }
+
 "magic_common_attack_sp1_cast"{
     "operator_stacks"{
         "update_stack"{
@@ -502,7 +514,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/ancient_apparition/iceblast_tick01.vsnd"
+                            "value0"    "sounds/weapons/hero/ancient_apparition/cold_feet_tick.vsnd"
 }   }   }   }   }   }   }
 
 "magic_water_mis_fire"{
@@ -551,7 +563,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/ancient_apparition/iceblast_tick01.vsnd"
+                            "value0"    "sounds/weapons/hero/ancient_apparition/cold_feet_tick.vsnd"
 }   }   }   }   }   }   }
 
 "magic_ice_mis_fire"{
@@ -614,6 +626,19 @@
                         "value"{
                             "value0"    "sounds/weapons/hero/legion_commander/overwhelming_target02.vsnd"
 }   }   }   }   }   }   }
+
+"magic_wind_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/clinkz/windwalk.vsnd"
+}   }   }   }   }   }   }
+
 
 //标系共用
 "magic_spear_power_up"{
@@ -794,6 +819,42 @@
                     "vsnd_files"{
                         "value"{
                             "value0"    "sounds/vo/wisp/move02.vsnd"
+}   }   }   }   }   }   }
+
+"magic_vision_down_light_ball_working"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/keeper/wisp_active.vsnd"
+}   }   }   }   }   }   }
+
+"magic_vision_down_light_ball_debuff"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/wisp/spirit_target.vsnd"
+}   }   }   }   }   }   }
+
+"magic_light_aoe_boom"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/templar_assassin/trap_explode.vsnd"
 }   }   }   }   }   }   }
 
 "magic_light_aoe_duration"{
@@ -1242,6 +1303,30 @@
                             "value0"    "sounds/weapons/hero/undying/tombstone_grab.vsnd"
 }   }   }   }   }   }   }
 
+"magic_trace_stone_ball_trace"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/elder_titan/echo_stomp_channel.vsnd"
+}   }   }   }   }   }   }
+
+"magic_trace_stone_ball_strike"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/earthshaker/gravelmaw_cast.vsnd"
+}   }   }   }   }   }   }
+
 "magic_twice_stone_ball_cast"{
     "operator_stacks"{
         "update_stack"{
@@ -1324,6 +1409,18 @@
                     "vsnd_files"{
                         "value"{
                             "value0"    "sounds/weapons/hero/viper/poison_attack_target_ti7.vsnd"
+}   }   }   }   }   }   }
+
+"magic_swamp_area_hit"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/viper/nose_dive_impact.vsnd"
 }   }   }   }   }   }   }
 
 "magic_clay_ball_cast"{
@@ -1611,7 +1708,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/crystal_maiden/crystal_nova_yulsaria.vsnd"
+                            "value0"    "sounds/weapons/hero/ancient_apparition/iceblast_explode.vsnd"
 }   }   }   }   }   }   }
 
 "magic_v_ice_ball_cast"{
@@ -1635,7 +1732,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/ancient_apparition/iceblast_explode.vsnd"
+                            "value0"    "sounds/weapons/hero/crystal_maiden/crystal_nova_yulsaria.vsnd"
 }   }   }   }   }   }   }
 
 "magic_water_ball_cast"{
