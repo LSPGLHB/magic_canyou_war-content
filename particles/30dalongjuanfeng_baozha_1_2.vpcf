@@ -165,7 +165,6 @@
 		{
 			_class = "C_OP_BasicMovement"
 			m_fDrag = 0.0345
-			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_OFF"
 		},
 		{
 			_class = "C_OP_PositionLock"
@@ -199,6 +198,7 @@
 			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
 			m_Rate = 1475.0
 			m_flEndTime = 999.0
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_FadeInSimple"
@@ -339,7 +339,7 @@
 				m_bNoiseImgPreviewLive = true
 				m_bUseBoundsCenter = false
 				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
-				m_flMultFactor = 0.0023
+				m_flMultFactor = 0.02
 				m_flInput0 = 0.0
 				m_flInput1 = 1.0
 				m_flOutput0 = 0.0

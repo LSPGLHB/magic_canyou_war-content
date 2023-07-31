@@ -12,10 +12,6 @@
 			m_drivers = 
 			[
 				{
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-				{
 					m_iControlPoint = 62
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
@@ -276,21 +272,25 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+			m_bDisableOperator = true
 		},
 	]
 	m_Children = 
 	[
 		{
 			m_ChildRef = resource:"particles/13dianliqiang_baozha_9_1.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/13dianliqiang_baozha_9_2.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/13dianliqiang_baozha_9_3.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/13dianliqiang_baozha_9_4.vpcf"
+			m_bDisableChild = true
 		},
 	]
 }

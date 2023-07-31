@@ -146,7 +146,7 @@
 			m_vecTexturesInput = 
 			[
 				{
-					m_hTexture = resource:"materials/particle/crystal/crystal.vtex"
+					m_hTexture = resource:"materials/models/heroes/morphling/watersprites/waveform_sprites2.vtex"
 				},
 			]
 		},
