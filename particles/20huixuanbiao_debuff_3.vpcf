@@ -163,9 +163,9 @@
 			_class = "C_INIT_InitFloat"
 			m_InputValue = 
 			{
-				m_nType = "PF_TYPE_CONTROL_POINT_COMPONENT"
+				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_MULT"
-				m_flLiteralValue = 0.5
+				m_flLiteralValue = 6.0
 				m_NamedValue = ""
 				m_nControlPoint = 15
 				m_nScalarAttribute = 3
