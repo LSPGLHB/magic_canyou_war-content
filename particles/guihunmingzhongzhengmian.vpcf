@@ -806,7 +806,6 @@
 			_class = "C_OP_Orient2DRelToCP"
 			m_flRotOffset = -90.0
 			m_nFieldOutput = 12
-			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_RampScalarLinearSimple"
