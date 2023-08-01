@@ -174,10 +174,6 @@
 				}
 			}
 			m_bEvenDistribution = true
-			m_TransformInput = 
-			{
-				m_nControlPoint = 3
-			}
 		},
 		{
 			_class = "C_INIT_InitFloat"
@@ -237,10 +233,6 @@
 		{
 			_class = "C_OP_PositionLock"
 			m_bLockRot = true
-			m_TransformInput = 
-			{
-				m_nControlPoint = 3
-			}
 		},
 		{
 			_class = "C_OP_BasicMovement"
