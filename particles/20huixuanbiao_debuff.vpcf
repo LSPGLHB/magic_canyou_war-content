@@ -288,6 +288,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/20huixuanbiao_debuff_6.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hero_meepo/meepo_earthbind_model_catch.vpcf"
