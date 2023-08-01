@@ -1564,7 +1564,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/disruptor/preattack.vsnd"
+                            "value0"    "sounds/weapons/hero/storm_spirit/attack2.vsnd"
 }   }   }   }   }   }   }
 
 "magic_thunder_spirit_boom_max"{
@@ -1807,6 +1807,30 @@
                             "value0"    "sounds/weapons/hero/lich/chain_frost_impact_lf.vsnd"
 }   }   }   }   }   }   }
 
+"magic_ice_skeleton_target_hit"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/vengeful_spirit/wave_of_terror.vsnd"
+}   }   }   }   }   }   }
+
+"magic_ice_skeleton_target_defense"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/omniknight/purification.vsnd"
+}   }   }   }   }   }   }
+
 "magic_twice_ice_ball_cast_sp1"{
     "operator_stacks"{
         "update_stack"{
@@ -1961,7 +1985,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/hoodwink/sharpshooter_projectile.vsnd"
+                            "value0"    "sounds/weapons/hero/hoodwink/sharpshooter_cast.vsnd"
 }   }   }   }   }   }   }
 
 "magic_wind_dart_speed_up"{
@@ -1973,7 +1997,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/windrunner/windrun.vsnd"
+                            "value0"    "sounds/weapons/hero/hoodwink/sharpshooter_projectile.vsnd"
 }   }   }   }   }   }   }
 
 "magic_wind_dart_speed_down"{
@@ -1985,7 +2009,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/windrunner/attack.vsnd"
+                            "value0"    "sounds/weapons/hero/hoodwink/scurry_end.vsnd"
 }   }   }   }   }   }   }
 
 "magic_wind_dart_boom"{
@@ -2010,6 +2034,18 @@
                     "vsnd_files"{
                         "value"{
                             "value0"    "sounds/weapons/hero/hoodwink/sharpshooter_target.vsnd"
+}   }   }   }   }   }   }
+
+"magic_wind_dart_lock_target"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/bounty_hunter/track.vsnd"
 }   }   }   }   }   }   }
 
 "magic_big_tornado_cast"{
