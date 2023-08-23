@@ -1,4 +1,5 @@
 "addon"
 {
-         "UIButton1"                   "无效"
+         "#UIButton4"                   "无效1"
+         "UIButton4"                   "无效2"
 }

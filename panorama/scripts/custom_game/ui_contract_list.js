@@ -1,13 +1,16 @@
 
 //获取天赋选择列表
-GameEvents.Subscribe( "getRandomContractListLUATOJS", getRandomContractListLUATOJS);
+GameEvents.Subscribe("getRandomContractListLUATOJS", getRandomContractListLUATOJS);
+
 function getRandomContractListLUATOJS(data){
+    $.Msg("=======getRandomContractListLUATOJS======")
     var listLength = data.listLength
     var contractNameList = data.contractNameList
     var contractShowNameList = data.contractShowNameList
     var contractIconList = data.contractIconList
     var contractDescribeList = data.contractDescribeList
-    //$.Msg("=======getRandomContractListLUATOJS======")
+   
+    $.Msg(contractNameList)
     $("#UIContractListPanelBox").AddClass("UIContractListPanelBox")
     var UIContractListPanelBg = $.CreatePanel('Panel', $("#UIContractListPanelBox"),"UIContractListPanelBg");
     UIContractListPanelBg.AddClass("UIContractListPanelBg")

@@ -4,16 +4,10 @@ function OpenMyUI() {
     GameEvents.SendCustomGameEventToServer( "myui_open", {} );
 }
 
-
-
 function JsToLua(name) {
     $.Msg("==============name:"+name)
     GameEvents.SendCustomGameEventToServer( "js_to_lua", {num:5, magicname:name} );
 }
-
-
-
-
 
 function LuaToJs() {
     GameEvents.SendCustomGameEventToServer( "lua_to_js", {} );
