@@ -2036,42 +2036,6 @@
                             "value0"    "sounds/weapons/hero/dark_seer/dota_dark_seer_vacuum.vsnd"
 }   }   }   }   }   }   }
 
-"magic_space_collapse_cast"{
-    "operator_stacks"{
-        "update_stack"{
-            "reference_operator"{
-                "operator"          "sos_reference_stack"
-                "reference_stack"   "dota_update_vo_switch"
-                "operator_variables"{
-                    "vsnd_files"{
-                        "value"{
-                            "value0"    "sounds/weapons/hero/hoodwink/boomerang.vsnd"
-}   }   }   }   }   }   }
-
-"magic_space_collapse_hit"{
-    "operator_stacks"{
-        "update_stack"{
-            "reference_operator"{
-                "operator"          "sos_reference_stack"
-                "reference_stack"   "dota_update_vo_switch"
-                "operator_variables"{
-                    "vsnd_files"{
-                        "value"{
-                            "value0"    "sounds/weapons/hero/windrunner/shackleshot_cast.vsnd"
-}   }   }   }   }   }   }
-
-"magic_space_collapse_catch"{
-    "operator_stacks"{
-        "update_stack"{
-            "reference_operator"{
-                "operator"          "sos_reference_stack"
-                "reference_stack"   "dota_update_vo_switch"
-                "operator_variables"{
-                    "vsnd_files"{
-                        "value"{
-                            "value0"    "sounds/weapons/hero/windrunner/focus_fire.vsnd"
-}   }   }   }   }   }   }
-
 "magic_wind_dart_cast"{
     "operator_stacks"{
         "update_stack"{
@@ -2177,7 +2141,7 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/invoker/mini_tornado05.vsnd"
+                            "value0"    "sounds/weapons/hero/windrunner/powershot_alt01.vsnd"
 }   }   }   }   }   }   }
 
 "magic_wind_arrow_cast_sp2"{
@@ -2189,9 +2153,9 @@
                 "operator_variables"{
                     "vsnd_files"{
                         "value"{
-                            "value0"    "sounds/weapons/hero/invoker/mini_tornado05.vsnd"
-                            "value1"    "sounds/weapons/hero/invoker/mini_tornado04.vsnd"
-                            "value2"    "sounds/weapons/hero/invoker/mini_tornado03.vsnd"
+                            "value0"    "sounds/weapons/hero/windrunner/powershot_damage05.vsnd"
+                            "value1"    "sounds/weapons/hero/windrunner/powershot_damage04.vsnd"
+                            "value2"    "sounds/weapons/hero/windrunner/powershot_damage03.vsnd"
 }   }   }   }   }   }   }
 
 "magic_wind_arrow_boom"{
