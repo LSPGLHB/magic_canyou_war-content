@@ -4,21 +4,21 @@
 }
 .UIMagicListPanelBox{
     width:100%;
-    height:610px;
-    margin-top:160px;
+    height:680px;
+    margin-top:150px;
     padding-left:50%;
 }
 .UIMagicListPanelBg{
-    width: 960px;
-    height:610px;
-    margin-left: -480px;
+    width: 1620px;
+    height:680px;
+    margin-left: -810px;
     background-color:#111111dd;
     border: 1px solid #111111;
     flow-children:down;
 }
 
 .UIMagicListPanel{
-    height: 610px;
+    height: 680px;
     flow-children:right;
     padding: 30px;
 }
@@ -30,8 +30,8 @@
 
 
 .magicPanel{
-    width:280px;
-    height:550px;
+    width:500px;
+    height:620px;
     background-color:#111111dd;
     border: 1px solid #000000;
     margin-left:30px;
@@ -47,31 +47,140 @@
     padding:10px 10px;
     flow-children:right;
 }
-.magicMsg{
-    width:190px;
-    height: 84px;
+.magicCDMC{
+    width: 120px;
+    height: 64px;
     flow-children:down;
+    
 }
-.magicName{
-    width:190px;
-    padding: 0px 0px 0px 10px;
-    height: 30px;
-    text-align: left;
-    vertical-align: middle;
-    font-size: 23px;
+.magicMC{
+    width:100px;
+    height:30px;
+    margin-top: 8px;
+    padding-left: 25px;
+    background-image: url("s2r://panorama/images/status_icons/ability_manacost_icon_psd.vtex");
+    background-repeat: no-repeat;
+    font-size: 18px;
+    color: #ffffff;
+}
+.magicCD{
+    width:100px;
+    height:30px;
+    padding-left: 25px;
+    background-image: url("s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex");
+    background-repeat: no-repeat;
+    font-size: 18px;
     color: #ffffff;
 }
 
+.magicMsg{
+    width:300px;
+    height: 84px;
+    flow-children:down;
+}
+.magicAttr{
+    width: 300px;
+    padding: 3px 20px;
+    height: 28px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 22px;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+}
+.magicName{
+    width:300px;
+    padding: 5px 20px;
+    height: 38px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.magicDescribe{
+    width: 500px;
+    padding: 10px;
+    height: 250px;
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 22px;
+    color: #ffffff;
+    
+}
+.magicValue{
+    width: 500px;
+    height:500px;
+    flow-children:down;
+    
+}
+.magicSpecialVal{
+    width: 200px;
+    height: 100%;
+}
+.magicSpecialValBox{
+    width: 500px;
+    height:250px;
+    font-size: 20px;
+    padding: 10px;
+    flow-children:right;
+    border-bottom: 2px solid #0e212d;
+    border-top: 2px solid #0e212d;
+}
+.magicSpecialValBox1{
+    width: 480px;
+    height:100%;
+    font-size: 20px;
+    flow-children:down;
+}
+.magicSpecialValBox2{
+    width: 240px;
+    height:100%;
+    font-size: 20px;
+    padding-left: 10px;
+    flow-children:down;
+}
+.magicSpecialValItem{
+    width: 100%;
+    height:22px;
+    flow-children:right;
+    color: #fff;
+    padding:2px 0;
+}
+.magicSpeedTitle{
+    color: #E3BD8D;
+    
+}
+.magicDistanceTitle,
+.magicRadiusTitle{
+    color: #BCE3B9;
+}
+.magicDamageTitle{
+    color:#FFC0CB;
+}
+.magicEnergyTitle{
+    color:#FBA414;
+}
+.magicEffectTitle{
+    color:#51C4D3;
+}
+.magicCommonTitle{
+    color:#ffffff;
+}
 
+
+.magicSpecialValue{
+    width: 150px;
+}
 
 
 
 .learnMagicButton{
     width:100%;
     padding: 5px 0 0 0;
-    height: 32px;
+    height: 38px;
     text-align: center;
-    vertical-align: middle;
+   
     font-size: 20px;
     color: #ffffff;
     background-color:#920000ee;
@@ -81,25 +190,8 @@
     background-color:#d80000ee;
     border: 1px solid #888888;
 }
-.magicAttr{
-    width: 280px;
-    padding: 10px;
-    height: 50px;
-    text-align: left;
-   
-    font-size: 20px;
-    color: #ffffff;
-}
-.magicDescribe{
-    width: 280px;
-    padding: 10px;
-    height: 366px;
-    text-align: left;
-   
-    font-size: 20px;
-    color: #ffffff;
-   
-}
+
+
 
 .magicButtonBox{
     width:80px;

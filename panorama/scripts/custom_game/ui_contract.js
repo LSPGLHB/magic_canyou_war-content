@@ -2,11 +2,12 @@ GameEvents.Subscribe( "setContractUILUATOJS", setContractUILUATOJS);
 
 
 function setContractUILUATOJS(data){
+    var contractName = data.contractName
     var contractShowName = data.contractShowName
-    var contractIcon = data.contractIcon
+    
     var contractDescribe = data.contractDescribe
-
-    $("#UIContractPanelIcon").SetImage(contractIcon)
+    var contractIconSrc = "file://{images}/custom_game/contract_icon/"+contractName+".png"
+    $("#UIContractPanelIcon").SetImage(contractIconSrc)
     $("#UIContractPanelName").text = contractShowName
     $("#UIContractPanelDescribe").text = contractDescribe
 

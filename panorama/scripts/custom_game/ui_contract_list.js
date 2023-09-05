@@ -7,10 +7,9 @@ function getRandomContractListLUATOJS(data){
     var listLength = data.listLength
     var contractNameList = data.contractNameList
     var contractShowNameList = data.contractShowNameList
-    var contractIconList = data.contractIconList
     var contractDescribeList = data.contractDescribeList
    
-    $.Msg(contractNameList)
+
     $("#UIContractListPanelBox").AddClass("UIContractListPanelBox")
     var UIContractListPanelBg = $.CreatePanel('Panel', $("#UIContractListPanelBox"),"UIContractListPanelBg");
     UIContractListPanelBg.AddClass("UIContractListPanelBg")
@@ -43,8 +42,8 @@ function getRandomContractListLUATOJS(data){
 
         var contract_img = $.CreatePanel('Image', $("#contractTopBanner"+i),"contract_img"+i);
         contract_img.AddClass("contract_img")
-        $.Msg(contractIconList[i])
-        contract_img.SetImage(contractIconList[i])
+        var contractIconSrc = "file://{images}/custom_game/contract_icon/"+contractNameList[i]+".png"
+        contract_img.SetImage(contractIconSrc)
 
         var contractMsg = $.CreatePanel('Panel', $("#contractTopBanner"+i),"contractMsg"+i);
         contractMsg.AddClass("contractMsg")
@@ -60,7 +59,7 @@ function getRandomContractListLUATOJS(data){
         var learnContractButton = $.CreatePanel('Label', $("#contractPanel"+i),"learnContractButton"+i);
         learnContractButton.AddClass("learnContractButton")
         learnContractButton.text = "签订"
-        var contractName = contractNameList[i]
+       
         if(i==1){
             learnContractButton.SetPanelEvent("onactivate",function(){learnContractByNum(1)})
         }else if(i==2){

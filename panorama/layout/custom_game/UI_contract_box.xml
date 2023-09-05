@@ -9,8 +9,17 @@
     <Panel hittest="false">
        <Panel class="UIContractPanelBG">
             <Panel class="UIContractPanelTitleBox">
-                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/contract.png"/>
-
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/nil.png"/>
+                <!--Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/battle_magician.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/control_force.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/damage_power.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/dark_mage.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/guerrilla_force.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/scout.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/sky_eyes.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/spell_power.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/tank.png"/-->
+                
                 <!--Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/ability_button/ember_spirit_flame_guard.png"/>
                 <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/ability_button/abaddon_borrowed_time.png"/>
                 <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/ability_button/abaddon_death_coil.png"/>
