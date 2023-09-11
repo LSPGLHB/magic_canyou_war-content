@@ -12,7 +12,7 @@ function openPlayerStatusLUATOJS(data){
     $("#UIPlayerStatusPanelBG").AddClass("UIPlayerStatusPanelBG")
 
     var heroNameList = data.playerStatusHeroList
-    var playerContractList = data.playerContractList
+    var playerContractLearn = data.playerContractLearn
     var playerAbilityNameList = data.playerStatusAbilityList
     var playerStatusItemList = data.playerStatusItemList
 
@@ -98,44 +98,11 @@ function openPlayerStatusLUATOJS(data){
         var playerStatusSEPanel = $.CreatePanel('Panel', playerStatusPlayerBox, "playerStatusSEPanel"+i);
         playerStatusSEPanel.AddClass("playerStatusSEPanel")
 
-        var playerContractName = playerContractList[i]
+        var playerContractName = playerContractLearn[i]['contractName']
         var playerStatusContract = $.CreatePanel('Image', playerStatusSEPanel, "playerStatusContract"+i);
         playerStatusContract.AddClass("playerStatusContract")
-       
         playerStatusContract.SetImage("file://{images}/custom_game/contract_icon/"+playerContractName+".png")
-
-
-        if (i == 0){
-            playerStatusContract.SetPanelEvent("onactivate",function(){getContractDetailByNum(0)})
-        }
-        if (i == 1){
-            playerStatusContract.SetPanelEvent("onactivate",function(){getContractDetailByNum(1)})
-        }
-        if (i == 2){
-            playerStatusContract.SetPanelEvent("onactivate",function(){getContractDetailByNum(2)})
-        }
-        if (i == 3){
-            playerStatusContract.SetPanelEvent("onactivate",function(){getContractDetailByNum(3)})
-        }
-        if (i == 4){
-            playerStatusContract.SetPanelEvent("onactivate",function(){getContractDetailByNum(4)})
-        }
-        if (i == 5){
-            playerStatusContract.SetPanelEvent("onactivate",function(){getContractDetailByNum(5)})
-        }
-        if (i == 6){
-            playerStatusContract.SetPanelEvent("onactivate",function(){getContractDetailByNum(6)})
-        }
-        if (i == 7){
-            playerStatusContract.SetPanelEvent("onactivate",function(){getContractDetailByNum(7)})
-        }
-        if (i == 8){
-            playerStatusContract.SetPanelEvent("onactivate",function(){getContractDetailByNum(8)})
-        }
-        if (i == 9){
-            playerStatusContract.SetPanelEvent("onactivate",function(){getContractDetailByNum(9)})
-        }
-        
+        playerStatusContract.SetPanelEvent("onmouseover",(function(playerId){return function(){getContractDetailByNum(playerId)}}(i)))
 
         var playerStatusSkillPanel = $.CreatePanel('Panel', playerStatusSEPanel, "playerStatusSkillPanel"+i);
         playerStatusSkillPanel.AddClass("playerStatusSkillPanel")
@@ -143,29 +110,24 @@ function openPlayerStatusLUATOJS(data){
 
         for(j=0;j<3;j++){
             var abilityIcon = playerAbilityNameList[i][j]
-            var abilityIconId = "#playerStatusSkill"+i+j
-            var playerStatusSkill = $.CreatePanel('Image', playerStatusSkillPanel, abilityIconId);
+            var abilityIconId = "playerStatusSkill"+i+j
+            var playerStatusSkill = $.CreatePanel('DOTAAbilityImage', playerStatusSkillPanel, abilityIconId);
             var abilityIconSrc = "file://{images}/custom_game/ability_button/"+abilityIcon+".png"
             playerStatusSkill.AddClass("playerStatusSkill")
             playerStatusSkill.SetImage(abilityIconSrc)
-            
-            if(i==0){
-                if (j==0){
-                    playerStatusSkill.SetPanelEvent("onactivate",function(){getMagicDetailByNum(0,0)})
-                }
-               
-            }
-          
+            playerStatusSkill.SetPanelEvent("onmouseover",(function(playerId,grid){return function(){getMagicDetailByNum(playerId,grid)}}(i,j)))
         }
 
         var playerStatusEquipPanel = $.CreatePanel('Panel', playerStatusSEPanel, "playerStatusEquipPanel"+i);
         playerStatusEquipPanel.AddClass("playerStatusEquipPanel")
         for(k=1;k<7;k++){
             var playerStatusItem = playerStatusItemList[i][k]
-            var itemIconId = "#playerStatusEquip"+i+k
+            var itemIconId = "playerStatusEquip"+i+k
             var playerStatusEquip = $.CreatePanel('Image', playerStatusEquipPanel, itemIconId);
+            var playerStatusItemSrc="file://{images}/custom_game/shop_item/"+playerStatusItem+".png" 
             playerStatusEquip.AddClass("playerStatusEquip")
-            playerStatusEquip.SetImage(playerStatusItem)
+            playerStatusEquip.SetImage(playerStatusItemSrc)
+            playerStatusEquip.SetPanelEvent("onmouseover",(function(playerId,grid){return function(){getItemDetailByNum(playerId,grid)}}(i,k)))
         }
 
         
@@ -187,4 +149,8 @@ function getContractDetailByNum(num){
 
 function getMagicDetailByNum(num, grid){
     GameEvents.SendCustomGameEventToServer( "getMagicDetailByNumJSTOLUA", {num:num,grid:grid})
+}
+
+function getItemDetailByNum(num, grid){
+    GameEvents.SendCustomGameEventToServer( "getItemDetailByNumJSTOLUA", {num:num,grid:grid})
 }

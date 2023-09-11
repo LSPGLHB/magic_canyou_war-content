@@ -155,19 +155,19 @@ function createMagicList(data,funcCallBack){
         }
         var unitTypeName
         if (unitTypeList[i] == 'huo') {
-            unitTypeName = "火系"
+            unitTypeName = "火属性"
         }
         if (unitTypeList[i] == 'feng') {
-            unitTypeName = "风系"
+            unitTypeName = "风属性"
         }
         if (unitTypeList[i] == 'lei') {
-            unitTypeName = "雷系"
+            unitTypeName = "雷属性"
         }
         if (unitTypeList[i] == 'tu') {
-            unitTypeName = "土系"
+            unitTypeName = "土属性"
         }
         if (unitTypeList[i] == 'shui') {
-            unitTypeName = "水系"
+            unitTypeName = "水属性"
         }
         magicAttrBox.text = magicLvName+" - "+unitTypeName
 
@@ -986,12 +986,6 @@ function getRebuildMagicListToForgetLUATOJS(data){
         magicDescribeBox.SetAlreadyLocalizedText($.Localize(magicDescribe))
 
 
-        
-
-
-
-
-
         var learnMagicButton = $.CreatePanel('Label', $("#magicPanel"+i),"learnMagicButton"+i);
         learnMagicButton.AddClass("learnMagicButton")
         learnMagicButton.text = "遗忘"
@@ -1004,9 +998,6 @@ function getRebuildMagicListToForgetLUATOJS(data){
             learnMagicButton.SetPanelEvent("onactivate",function(){rebuildMagicByNum(3)})
         }
        
-
-
-
     }
 
     var magicButtonBg = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"magicButtonBg");
