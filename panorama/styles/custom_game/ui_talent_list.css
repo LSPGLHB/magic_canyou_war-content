@@ -1,36 +1,33 @@
-#UIShopBox{
+#UITalentListPanelBox{
     width:100%;
-    z-index: -1;
+    
 }
-
-.UIShopBox{
+.UITalentListPanelBox{
     width:100%;
     height:610px;
     margin-top:160px;
     padding-left:50%;
 }
-.UIShopBg{
+.UITalentListPanelBg{
     width: 960px;
     height:610px;
     margin-left: -480px;
     background-color:#111111dd;
     border: 1px solid #111111;
-   
     flow-children:down;
-
 }
 
-.UIShop{
+.UITalentListPanel{
     height: 260px;
     flow-children:right;
     padding: 30px 0 0 30px;
 }
-.shop_item_img{
-    width:85px;
+.talent_img{
+    width:64px;
     height:64px;
 }
 
-.shopItemPanel{
+.talentPanel{
     width:280px;
     height:250px;
     background-color:#111111dd;
@@ -38,50 +35,33 @@
     margin-right:30px;
     flow-children:down;
 }
-.itemTopBanner{
+.talentTopBanner{
     width:100%;
     height: 84px;
     background-color:#0e212d;
     padding:10px 10px;
     flow-children:right;
 }
-.itemMsg{
-    width:180px;
+.talentMsg{
+    width:190px;
     height: 84px;
     flow-children:down;
 }
-.itemName{
-    width:180px;
-    padding: 5px 0px 5px 5px;
+.talentName{
+    width:190px;
+    padding: 0px 0px 0px 10px;
     height: 30px;
     text-align: left;
     vertical-align: middle;
-    font-size: 22px;
+    font-size: 23px;
     color: #ffffff;
-}
-.itemCostPanel{
-    flow-children:right;
-}
-.itemCost{
-    width:160px;
-    padding: 5px 10px;
-    height: 30px;
-    text-align: left;
-    vertical-align: middle;
-    font-size: 20px;
-    color: #ffffff;
-    
-}
-.goldIcon{
-    width:26px;
-    height:26px;
-    margin: 5px 0 0 10px;
-    background-image: url("s2r://panorama/images/hud/reborn/gold_small_psd.vtex");
-    background-size: 100% 100%;
 }
 
 
-.buyItemButton{
+
+
+
+.learntalentButton{
     width:100%;
     padding: 5px 0 0 0;
     height: 32px;
@@ -92,12 +72,12 @@
     background-color:#920000ee;
 }
 
-.buyItemButton:hover{
+.learntalentButton:hover{
     background-color:#d80000ee;
     border: 1px solid #888888;
 }
 
-.itemDescribe{
+.talentDescribe{
     width: 270px;
     padding: 5px;
     height: 112px;
@@ -105,23 +85,17 @@
     vertical-align: middle;
     font-size: 20px;
     color: #ffffff;
-    flow-children:right;
+   
 }
 
-.itemDescribeLabel{
-
-    
-}
-
-
-.shopButtonBox{
+.talentButtonBox{
     width:80px;
     height:50px;
     background-color:#920000ee;
     border: 1px solid #888888;
 }
 
-.shopButtonBg{
+.talentButtonBg{
     width:100%;
     height:60px;
     background-color:#111111dd;
@@ -130,7 +104,7 @@
     
     flow-children:right;
 }
-.shopButton{
+.talentButton{
     width: 160px;
     height: 32px;
     text-align: center;
@@ -142,14 +116,12 @@
     margin: 0 160px;
 }
 
-.shopButton:hover{
+.talentButton:hover{
     background-color:#d80000ee;
     border: 1px solid #888888;
 }
 
-.shopRefresh{
-    
-}
-.shopCancel{
-    
-}
+
+
+
+

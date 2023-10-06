@@ -1,0 +1,27 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/ui_talent.css"/>
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/ui_talent.js"/>
+    </scripts>
+
+    <Panel hittest="false">
+       <Panel class="UITalentPanelBG">
+            <Panel class="UITalentPanelListBox">
+                <Image id="UITalentPanelIconC" class="UITalentPanelIcon" src="file://{images}/custom_game/talent_icon/faceless_void_time_lock.png"/>
+                <Label id="UITalentPanelDescribeC" class="UITalentPanelDescribe" text="无天赋"/>
+            </Panel>
+            <Panel class="UITalentPanelListBox">
+                <Image id="UITalentPanelIconB" class="UITalentPanelIcon" src="file://{images}/custom_game/talent_icon/faceless_void_time_lock.png"/>
+                <Label id="UITalentPanelDescribeB" class="UITalentPanelDescribe" text="无天赋"/>
+            </Panel> 
+            <Panel class="UITalentPanelListBox">
+                <Image id="UITalentPanelIconA" class="UITalentPanelIcon" src="file://{images}/custom_game/talent_icon/faceless_void_time_lock.png"/>
+                <Label id="UITalentPanelDescribeA" class="UITalentPanelDescribe" text="无天赋"/>
+            </Panel> 
+
+       </Panel> 
+    </Panel> 
+
+</root>

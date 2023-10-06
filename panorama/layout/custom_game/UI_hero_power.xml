@@ -1,0 +1,44 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/ui_hero_power.css"/>
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/ui_hero_power.js"/>
+    </scripts>
+
+    <Panel hittest="false">
+       <Panel class="UIHeroPowerPanelBG">
+             <Panel class="UIHeroPowerItems">
+                <Label  class="UIHeroPowerItemTitle" text="初级技能射程(范围):" />
+                <Label id="range_c_power_base"  class="UIHeroPowerItemValue" text="+500" />
+                <Label id="range_c_power_percent_base" class="UIHeroPowerItemValue" text="+25" />
+                <Label id="range_c_power_percent_final" class="UIHeroPowerItemValue" text="+30" />
+            </Panel>
+            <Panel class="UIHeroPowerItems">
+                <Label  class="UIHeroPowerItemTitle" text="中级技能射程(范围):" />
+                <Label id="range_b_power_base"  class="UIHeroPowerItemValue" text="+500" />
+                <Label id="range_b_power_percent_base" class="UIHeroPowerItemValue" text="+25" />
+                <Label id="range_b_power_percent_final" class="UIHeroPowerItemValue" text="+30" />
+            </Panel>
+            <Panel class="UIHeroPowerItems">
+                <Label  class="UIHeroPowerItemTitle" text="高级技能射程(范围):" />
+                <Label id="range_a_power_base"  class="UIHeroPowerItemValue" text="+500" />
+                <Label id="range_a_power_percent_base" class="UIHeroPowerItemValue" text="+25" />
+                <Label id="range_a_power_percent_final" class="UIHeroPowerItemValue" text="+33" />
+            </Panel>
+            <Panel class="UIHeroPowerItems">
+                <Label  class="UIHeroPowerItemTitle" text="伤害:" />
+                <Label  class="UIHeroPowerItemValue" text="+500" />
+            </Panel>
+            <Panel class="UIHeroPowerItems">
+                <Label  class="UIHeroPowerItemTitle" text="射程(范围):" />
+                <Label  class="UIHeroPowerItemValue" text="+500" />
+            </Panel>
+            <Panel class="UIHeroPowerItems">
+                <Label  class="UIHeroPowerItemTitle" text="射程(范围):" />
+                <Label  class="UIHeroPowerItemValue" text="+500" />
+            </Panel>
+       </Panel> 
+    </Panel> 
+
+</root>

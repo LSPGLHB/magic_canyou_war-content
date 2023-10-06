@@ -1,5 +1,13 @@
 //扫描商人
 GameEvents.Subscribe( "checkShopLUATOJS", checkShopLUATOJS)
+GameEvents.Subscribe( "initJS", initJS)
+
+//CSS隐藏不能lua隐藏的东西
+function initJS(){
+    $.Msg("initJSinitJSinitJSinitJSinitJSinitJS")
+    var tempPanel = $.GetContextPanel().GetParent().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("Ability6")
+    tempPanel.style.visibility = "collapse";//隐藏本该隐藏的技能
+}
 
 function checkShopLUATOJS(data){
     var shopFlag = data.flag
@@ -94,26 +102,14 @@ Game.AddCommand(
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function playerStatusActive(){
+    //initJS()
+    
+
     var mainUI = $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements")
     var UIShopButton = mainUI.FindChildTraverse("UIPlayerStatusButton")
     var buttonStats = UIShopButton.BHasClass("UIPlayerStatusButtonActive")
+   
     if(buttonStats){
         UIShopButton.RemoveClass("UIPlayerStatusButtonActive")
         closePlayerStstus()

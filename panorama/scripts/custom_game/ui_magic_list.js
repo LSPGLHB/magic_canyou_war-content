@@ -185,7 +185,7 @@ function createMagicList(data,funcCallBack){
         magicDescribeBox.AddClass("magicDescribe")
         var magicDescribe = "#DOTA_Tooltip_ability_"+ magicNameList[i] + "_Description"
         var tempMagicDescribe = $.Localize(magicDescribe)
-        var tempNum = tempMagicDescribe.indexOf('\n')
+        var tempNum = tempMagicDescribe.indexOf('<br/><br/>')+10
         tempMagicDescribe = tempMagicDescribe.slice(tempNum);
         tempMagicDescribe = tempMagicDescribe.replace(/\s+/g,"")
         magicDescribeBox.SetAlreadyLocalizedText(tempMagicDescribe)
@@ -923,7 +923,7 @@ function createMagicList(data,funcCallBack){
         }else if(i==2){
             learnMagicButton.SetPanelEvent("onactivate",function(){funcCallBack(2)})
         }else if(i==3){
-            learnMagicButton.SetPanelEvent("onactivate",function(){refreshMagicList()})
+            learnMagicButton.SetPanelEvent("onactivate",function(){funcCallBack(3)})
         }
 
     }
@@ -983,7 +983,11 @@ function getRebuildMagicListToForgetLUATOJS(data){
         var magicDescribeBox = $.CreatePanel('Label', $("#magicPanel"+i),"magicDescribe"+i);
         magicDescribeBox.AddClass("magicDescribe")
         var magicDescribe = "#DOTA_Tooltip_ability_"+ magicNameList[i] + "_Description"
-        magicDescribeBox.SetAlreadyLocalizedText($.Localize(magicDescribe))
+        var tempMagicDescribe = $.Localize(magicDescribe)
+        var tempNum = tempMagicDescribe.indexOf('<br/><br/>')
+        tempMagicDescribe = tempMagicDescribe.slice(tempNum);
+        tempMagicDescribe = tempMagicDescribe.replace(/\s+/g,"")
+        magicDescribeBox.SetAlreadyLocalizedText(tempMagicDescribe)
 
 
         var learnMagicButton = $.CreatePanel('Label', $("#magicPanel"+i),"learnMagicButton"+i);
@@ -1057,15 +1061,16 @@ function getRebuildRandomMagicListLUATOJS(data){
         var magicShowName = "#DOTA_Tooltip_ability_"+ magicNameList[i]
         magicNameBox.text = $.Localize(magicShowName)
 
-       // var magicDescribeBox = $.CreatePanel('Label', $("#magicPanel"+i),"magicDescribe"+i);
-        //magicDescribeBox.AddClass("magicDescribe")
-       // var magicDescribe = "#DOTA_Tooltip_ability_"+ magicNameList[i] + "_Description"
-       // magicDescribeBox.text = $.Localize(magicDescribe)
+
 
         var magicDescribeBox = $.CreatePanel('Label', $("#magicPanel"+i),"magicDescribe"+i);
         magicDescribeBox.AddClass("magicDescribe")
         var magicDescribe = "#DOTA_Tooltip_ability_"+ magicNameList[i] + "_Description"
-        magicDescribeBox.SetAlreadyLocalizedText($.Localize(magicDescribe))
+        var tempMagicDescribe = $.Localize(magicDescribe)
+        var tempNum = tempMagicDescribe.indexOf('\n')
+        tempMagicDescribe = tempMagicDescribe.slice(tempNum);
+        tempMagicDescribe = tempMagicDescribe.replace(/\s+/g,"")
+        magicDescribeBox.SetAlreadyLocalizedText(tempMagicDescribe)
 
 
         var learnMagicButton = $.CreatePanel('Label', $("#magicPanel"+i),"learnMagicButton"+i);

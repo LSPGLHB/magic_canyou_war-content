@@ -2,12 +2,9 @@ GameEvents.Subscribe( "getShopItemListLUATOJS", getShopItemListLUATOJS);
 GameEvents.Subscribe( "checkGoldLUATOJS", checkGold);
 
 function getShopItemListLUATOJS(data) {
-
     var nameList = data.randomItemNameList
-    var showNameList = data.randomItemShowNameList
     var costList = data.randomItemCostList
-    var iconList = data.randomItemIconList
-    var describeList = data.randomItemDescribeList
+    var textureNameList = data.randomItemTextureNameList
     //$.Msg(data.num)
     $("#UIShopBox").AddClass("UIShopBox")
     var UIShopBg = $.CreatePanel('Panel', $("#UIShopBox"),"UIShopBg");
@@ -33,14 +30,19 @@ function getShopItemListLUATOJS(data) {
 
         var itemImage = $.CreatePanel('Image', $("#itemTopBanner"+i),"itemImg"+i);
         itemImage.AddClass("shop_item_img")
-        itemImage.SetImage(iconList[i])
+        var iconSrc = "file://{images}/custom_game/shop_item/" + textureNameList[i] + ".png"
+        itemImage.SetImage(iconSrc)
     
         var itemMsg = $.CreatePanel('Panel', $("#itemTopBanner"+i),"itemMsg"+i);
         itemMsg.AddClass("itemMsg")
 
+
+
         var itemName = $.CreatePanel('Label', $("#itemMsg"+i),"itemName"+i);
         itemName.AddClass("itemName")
-        itemName.text=$.Localize(showNameList[i])
+        itemName.html = true
+        itemName.text = $.Localize("#DOTA_Tooltip_ability_" + nameList[i])
+
 
         var itemCostPanel = $.CreatePanel('Panel', $("#itemMsg"+i),"itemCostPanel"+i);
         itemCostPanel.AddClass("itemCostPanel")
@@ -53,32 +55,21 @@ function getShopItemListLUATOJS(data) {
         var itemCostVal = costList[i]
         itemCost.text = itemCostVal
 
+        
+        var itemDescribeStr = $.Localize("#DOTA_Tooltip_ability_"+ nameList[i] +"_Description")
+
         var itemDescribe = $.CreatePanel('Label', $("#shopItemPanel"+i),"itemDescribe"+i);
         itemDescribe.AddClass("itemDescribe")
-        itemDescribe.text = $.Localize(describeList[i])
+        itemDescribe.html = true
+        itemDescribe.text = itemDescribeStr
+
 
         var buyItemButton = $.CreatePanel('Label', $("#shopItemPanel"+i),"buyItemButton"+i);
         buyItemButton.AddClass("buyItemButton")
         
         buyItemButton.text = $.Localize("#Buy")
-        
-        if(i==1){
-            buyItemButton.SetPanelEvent("onactivate",function(){shopBuy(1)})
-        }else if(i==2){
-            buyItemButton.SetPanelEvent("onactivate",function(){shopBuy(2)})
-        }
-        else if(i==3){
-            buyItemButton.SetPanelEvent("onactivate",function(){shopBuy(3)})
-        }
-        else if(i==4){
-            buyItemButton.SetPanelEvent("onactivate",function(){shopBuy(4)})
-        }
-        else if(i==5){
-            buyItemButton.SetPanelEvent("onactivate",function(){shopBuy(5)})
-        }
-        else if(i==6){
-            buyItemButton.SetPanelEvent("onactivate",function(){shopBuy(6)})
-        }
+        buyItemButton.SetPanelEvent("onactivate",(function(num){return function(){shopBuy(num)}}(i)))
+        //buyItemButton.SetPanelEvent("onactivate",function(){shopBuy(1)})
        
     }
 
@@ -98,6 +89,7 @@ function getShopItemListLUATOJS(data) {
     shopCancel.SetPanelEvent("onactivate",function(){shopClose()})
 
 }
+
 
 function checkGold(data){
     var playerGold = data.playerGold
@@ -124,4 +116,5 @@ function shopBuy(num){
     $.Msg("==============shopBuy==========",num)
     GameEvents.SendCustomGameEventToServer( "buyShopJSTOLUA", {num:num})
 }
+
 

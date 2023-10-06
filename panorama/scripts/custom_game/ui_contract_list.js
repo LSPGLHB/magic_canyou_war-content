@@ -97,13 +97,13 @@ function getRandomContractListLUATOJS(data){
 }
 
 function closeContractList(){
-    GameEvents.SendCustomGameEventToServer( "closeContractListJSTOLUA", {})
+    GameEvents.SendCustomGameEventToServer("closeContractListJSTOLUA", {})
 }
 
 function refreshContractList(){
-    GameEvents.SendCustomGameEventToServer( "refreshContractListJSTOLUA", {})
+    GameEvents.SendCustomGameEventToServer("refreshContractListJSTOLUA", {})
 }
 
 function learnContractByNum(num){
-    GameEvents.SendCustomGameEventToServer( "learnContractByNameJSTOLUA", {num:num})
+    GameEvents.SendCustomGameEventToServer("learnContractByNameJSTOLUA", {num:num})
 }
