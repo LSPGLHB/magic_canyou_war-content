@@ -96,10 +96,6 @@ function createMagicList(data,funcCallBack){
     var shootCountList_82 = data.shootCountList_82
     var GSpeedList_83 = data.GSpeedList_83
 
-
-
-
-
     //$.Msg("=======getRandomMagicListLUATOJS======")
     $("#UIMagicListPanelBox").AddClass("UIMagicListPanelBox")
     var UIMagicListPanelBg = $.CreatePanel('Panel', $("#UIMagicListPanelBox"),"UIMagicListPanelBg");
@@ -927,6 +923,14 @@ function createMagicList(data,funcCallBack){
         }
 
     }
+    var magicButtonBg = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"magicButtonBg");
+    magicButtonBg.AddClass("magicButtonBg")
+
+    var shopCancel = $.CreatePanel('Label', $("#magicButtonBg"),"magicCancel");
+    shopCancel.AddClass("magicCancel")
+    shopCancel.AddClass("magicButton")
+    shopCancel.text = "关闭"
+    shopCancel.SetPanelEvent("onactivate",function(){closeMagicList()})
 
 }
 
@@ -936,27 +940,35 @@ function getRandomMagicListLUATOJS(data){
 
 
 
+
 function getRebuildMagicListToForgetLUATOJS(data){
     var listLength = 3
     var magicNameList = data.magicNameList
     var magicIconList = data.magicIconList
     $.Msg("=======getRebuildMagicListToForgetLUATOJS======")
     //$.Msg(listLength)
-    $("#UIMagicListPanelBox").AddClass("UIMagicListPanelBox")
-    var UIMagicListPanelBg = $.CreatePanel('Panel', $("#UIMagicListPanelBox"),"UIMagicListPanelBg");
-    UIMagicListPanelBg.AddClass("UIMagicListPanelBg")
+    $("#UIMagicListPanelBox").AddClass("UIMagicListPanelBoxForRebuild")
 
+    var UIMagicListPanelBg = $.CreatePanel('Panel', $("#UIMagicListPanelBox"),"UIMagicListPanelBg");
+    UIMagicListPanelBg.AddClass("UIMagicListPanelBgForRebuild")
+
+    var UIMagicListPanelTitle = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"UIMagicListPanelTitle");
+    UIMagicListPanelTitle.AddClass("UIMagicListPanelTitleForRebuild")
+    var UIMagicListLabelTitle = $.CreatePanel('Label', $("#UIMagicListPanelTitle"),"UIMagicListLabelTitle");
+    UIMagicListLabelTitle.AddClass("UIMagicListLabelTitleForRebuild")
+    UIMagicListLabelTitle.text = "选择遗忘一个技能并重修"
+
+    var UIMagicListPanel = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"UIMagicListPanel1");
+    UIMagicListPanel.AddClass("UIMagicListPanel")
 
     for(i=1;i<=listLength;i++){
 
-        var UIMagicListPanel = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"UIMagicListPanel1");
-        UIMagicListPanel.AddClass("UIMagicListPanel")
 
-        var magicPanel
-
-        magicPanel = $.CreatePanel('Panel', $("#UIMagicListPanel1"),"magicPanel"+i);
-        magicPanel.AddClass("magicPanel")
-
+        var magicPanel = $.CreatePanel('Panel', $("#UIMagicListPanel1"),"magicPanel"+i);
+        magicPanel.AddClass("magicPanelForRebuild")
+        if (i== 1) {
+            magicPanel.AddClass("magicPanel_firstChild")
+        }
 
         var magicTopBanner = $.CreatePanel('Panel', $("#magicPanel"+i),"magicTopBanner"+i);
         magicTopBanner.AddClass("magicTopBanner")
@@ -975,19 +987,6 @@ function getRebuildMagicListToForgetLUATOJS(data){
         var magicShowName = "#DOTA_Tooltip_ability_"+ magicNameList[i]
         magicNameBox.text = $.Localize(magicShowName)
 
-       // var magicDescribeBox = $.CreatePanel('Label', $("#magicPanel"+i),"magicDescribe"+i);
-        //magicDescribeBox.AddClass("magicDescribe")
-       // var magicDescribe = "#DOTA_Tooltip_ability_"+ magicNameList[i] + "_Description"
-       // magicDescribeBox.text = $.Localize(magicDescribe)
-
-        var magicDescribeBox = $.CreatePanel('Label', $("#magicPanel"+i),"magicDescribe"+i);
-        magicDescribeBox.AddClass("magicDescribe")
-        var magicDescribe = "#DOTA_Tooltip_ability_"+ magicNameList[i] + "_Description"
-        var tempMagicDescribe = $.Localize(magicDescribe)
-        var tempNum = tempMagicDescribe.indexOf('<br/><br/>')
-        tempMagicDescribe = tempMagicDescribe.slice(tempNum);
-        tempMagicDescribe = tempMagicDescribe.replace(/\s+/g,"")
-        magicDescribeBox.SetAlreadyLocalizedText(tempMagicDescribe)
 
 
         var learnMagicButton = $.CreatePanel('Label', $("#magicPanel"+i),"learnMagicButton"+i);
@@ -1022,68 +1021,5 @@ function rebuildMagicByNum(num){
 
 
 function getRebuildRandomMagicListLUATOJS(data){
-    var listLength = data.listLength
-    var magicNameList = data.magicNameList
-    var magicIconList = data.magicIconList
-    //$.Msg("=======getRandomMagicListLUATOJS======")
-    //$.Msg(listLength)
-    $("#UIMagicListPanelBox").AddClass("UIMagicListPanelBox")
-    var UIMagicListPanelBg = $.CreatePanel('Panel', $("#UIMagicListPanelBox"),"UIMagicListPanelBg");
-    UIMagicListPanelBg.AddClass("UIMagicListPanelBg")
-
-
-    for(i=1;i<=listLength;i++){
-
-        var UIMagicListPanel = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"UIMagicListPanel1");
-        UIMagicListPanel.AddClass("UIMagicListPanel")
-
-
-        var magicPanel
-
-        magicPanel = $.CreatePanel('Panel', $("#UIMagicListPanel1"),"magicPanel"+i);
-        magicPanel.AddClass("magicPanel")
-
-
-        var magicTopBanner = $.CreatePanel('Panel', $("#magicPanel"+i),"magicTopBanner"+i);
-        magicTopBanner.AddClass("magicTopBanner")
-
-        var magic_img = $.CreatePanel('DOTAAbilityImage', $("#magicTopBanner"+i),"magic_img"+i);
-        magic_img.AddClass("magic_img")
-        //$.Msg(magicIconList[i])
-        magic_img.SetImage(magicIconList[i])
-        //magic_img.abilityname(magicNameList[i])
-
-        var magicMsg = $.CreatePanel('Panel', $("#magicTopBanner"+i),"magicMsg"+i);
-        magicMsg.AddClass("magicMsg")
-
-        var magicNameBox = $.CreatePanel('Label', $("#magicMsg"+i),"magicName"+i);
-        magicNameBox.AddClass("magicName")
-        var magicShowName = "#DOTA_Tooltip_ability_"+ magicNameList[i]
-        magicNameBox.text = $.Localize(magicShowName)
-
-
-
-        var magicDescribeBox = $.CreatePanel('Label', $("#magicPanel"+i),"magicDescribe"+i);
-        magicDescribeBox.AddClass("magicDescribe")
-        var magicDescribe = "#DOTA_Tooltip_ability_"+ magicNameList[i] + "_Description"
-        var tempMagicDescribe = $.Localize(magicDescribe)
-        var tempNum = tempMagicDescribe.indexOf('\n')
-        tempMagicDescribe = tempMagicDescribe.slice(tempNum);
-        tempMagicDescribe = tempMagicDescribe.replace(/\s+/g,"")
-        magicDescribeBox.SetAlreadyLocalizedText(tempMagicDescribe)
-
-
-        var learnMagicButton = $.CreatePanel('Label', $("#magicPanel"+i),"learnMagicButton"+i);
-        learnMagicButton.AddClass("learnMagicButton")
-        learnMagicButton.text = "学习"
-    
-        if(i==1){
-            learnMagicButton.SetPanelEvent("onactivate",function(){learnRebuildMagicByNum(1)})
-        }else if(i==2){
-            learnMagicButton.SetPanelEvent("onactivate",function(){learnRebuildMagicByNum(2)})
-        }else if(i==3){
-            learnMagicButton.SetPanelEvent("onactivate",function(){learnRebuildMagicByNum(3)})
-        }
-       
-    }
+    createMagicList(data,learnRebuildMagicByNum)
 }

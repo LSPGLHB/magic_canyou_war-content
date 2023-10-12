@@ -5,8 +5,9 @@ GameEvents.Subscribe( "initJS", initJS)
 //CSS隐藏不能lua隐藏的东西
 function initJS(){
     $.Msg("initJSinitJSinitJSinitJSinitJSinitJS")
-    var tempPanel = $.GetContextPanel().GetParent().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("Ability6")
-    tempPanel.style.visibility = "collapse";//隐藏本该隐藏的技能
+    var tempPanel = $.GetContextPanel().GetParent().GetParent().GetParent().FindChildTraverse("HUDElements")
+    tempPanel.FindChildTraverse("Ability6").style.visibility = "collapse";//隐藏本该隐藏的技能
+    tempPanel.FindChildTraverse("Ability7").style.visibility = "collapse";//隐藏本该隐藏的技能
 }
 
 function checkShopLUATOJS(data){
