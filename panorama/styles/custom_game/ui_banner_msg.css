@@ -5,9 +5,10 @@
 
 .UIBannerMsgBox{
     width:100%;
-    height:100px;
-    margin-top:80px;
+    height:80px;
+    margin-top:60px;
     padding-left:50%;
+    z-index: -1;
 }
 
 .UIBannerMsgBG{

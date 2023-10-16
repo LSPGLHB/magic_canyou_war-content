@@ -10,6 +10,18 @@ function getShopItemListLUATOJS(data) {
     var UIShopBg = $.CreatePanel('Panel', $("#UIShopBox"),"UIShopBg");
     UIShopBg.AddClass("UIShopBg")
 
+    var UIShopTitlePanel = $.CreatePanel('Panel', $("#UIShopBg"),"UIShopTitlePanel");
+    UIShopTitlePanel.AddClass("UIShopTitlePanel")
+
+    var UIShopTitleTitle = $.CreatePanel('Label', $("#UIShopTitlePanel"),"UIShopTitleTitle");
+    UIShopTitleTitle.AddClass("UIShopTitleTitle")
+    UIShopTitleTitle.text = "装备购买"
+
+    var UIShopCloseBtn = $.CreatePanel('Panel', $("#UIShopTitlePanel"),"UIShopCloseBtn");
+    UIShopCloseBtn.AddClass("UIShopCloseBtn") 
+    UIShopCloseBtn.SetPanelEvent("onactivate",function(){shopClose()})
+
+
     var shopPanelTop = $.CreatePanel('Panel', $("#UIShopBg"),"UIShop1");
     shopPanelTop.AddClass("UIShop")
 

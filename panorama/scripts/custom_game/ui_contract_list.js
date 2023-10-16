@@ -14,6 +14,18 @@ function getRandomContractListLUATOJS(data){
     var UIContractListPanelBg = $.CreatePanel('Panel', $("#UIContractListPanelBox"),"UIContractListPanelBg");
     UIContractListPanelBg.AddClass("UIContractListPanelBg")
 
+    
+
+    var UIContractTitlePanel = $.CreatePanel('Panel', $("#UIContractListPanelBg"),"UIContractTitlePanel");
+    UIContractTitlePanel.AddClass("UIContractTitlePanel")
+
+    var UIContractTitleLabel = $.CreatePanel('Label', $("#UIContractTitlePanel"),"UIContractTitleLabel");
+    UIContractTitleLabel.AddClass("UIContractTitleLabel")
+    UIContractTitleLabel.text = "选择你的契约"
+
+    var UITitleCloseBtn = $.CreatePanel('Panel', $("#UIContractTitlePanel"),"UIContractTitleCloseBtn");
+    UITitleCloseBtn.AddClass("UIContractListTitleCloseBtn") 
+    UITitleCloseBtn.SetPanelEvent("onactivate",function(){closeContractList()})
 
 
     for(i=1;i<=listLength;i++){
@@ -54,31 +66,20 @@ function getRandomContractListLUATOJS(data){
 
         var contractDescribe = $.CreatePanel('Label', $("#contractPanel"+i),"contractDescribe"+i);
         contractDescribe.AddClass("contractDescribe")
+        contractDescribe.html = true
         contractDescribe.text = contractDescribeList[i]
 
         var learnContractButton = $.CreatePanel('Label', $("#contractPanel"+i),"learnContractButton"+i);
         learnContractButton.AddClass("learnContractButton")
         learnContractButton.text = "签订"
-       
-        if(i==1){
-            learnContractButton.SetPanelEvent("onactivate",function(){learnContractByNum(1)})
-        }else if(i==2){
-            learnContractButton.SetPanelEvent("onactivate",function(){learnContractByNum(2)})
-        }else if(i==3){
-            learnContractButton.SetPanelEvent("onactivate",function(){learnContractByNum(3)})
-        }else if(i==4){
-            learnContractButton.SetPanelEvent("onactivate",function(){learnContractByNum(4)})
-        }else if(i==5){
-            learnContractButton.SetPanelEvent("onactivate",function(){learnContractByNum(5)})
-        }else if(i==6){
-            learnContractButton.SetPanelEvent("onactivate",function(){learnContractByNum(6)})
-        }
-       
+        learnContractButton.SetPanelEvent("onactivate",function(num){return function(){learnContractByNum(num)}}(i))
+
+
 
 
 
     }
-
+/*
     var contractButtonBg = $.CreatePanel('Panel', $("#UIContractListPanelBg"),"contractButtonBg");
     contractButtonBg.AddClass("contractButtonBg")
 
@@ -93,7 +94,7 @@ function getRandomContractListLUATOJS(data){
     shopCancel.AddClass("contractButton")
     shopCancel.text = "关闭"
     shopCancel.SetPanelEvent("onactivate",function(){closeContractList()})
-
+*/
 }
 
 function closeContractList(){

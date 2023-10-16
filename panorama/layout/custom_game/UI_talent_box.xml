@@ -10,15 +10,15 @@
        <Panel class="UITalentPanelBG">
             <Panel class="UITalentPanelListBox">
                 <Image id="UITalentPanelIconC" class="UITalentPanelIcon" src="file://{images}/custom_game/talent_icon/faceless_void_time_lock.png"/>
-                <Label id="UITalentPanelDescribeC" class="UITalentPanelDescribe" text="无天赋"/>
+                <Label id="UITalentPanelDescribeC" class="UITalentPanelDescribe" text="空"/>
             </Panel>
             <Panel class="UITalentPanelListBox">
                 <Image id="UITalentPanelIconB" class="UITalentPanelIcon" src="file://{images}/custom_game/talent_icon/faceless_void_time_lock.png"/>
-                <Label id="UITalentPanelDescribeB" class="UITalentPanelDescribe" text="无天赋"/>
+                <Label id="UITalentPanelDescribeB" class="UITalentPanelDescribe" text="空"/>
             </Panel> 
             <Panel class="UITalentPanelListBox">
                 <Image id="UITalentPanelIconA" class="UITalentPanelIcon" src="file://{images}/custom_game/talent_icon/faceless_void_time_lock.png"/>
-                <Label id="UITalentPanelDescribeA" class="UITalentPanelDescribe" text="无天赋"/>
+                <Label id="UITalentPanelDescribeA" class="UITalentPanelDescribe" text="空"/>
             </Panel> 
 
        </Panel> 

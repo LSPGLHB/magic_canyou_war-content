@@ -23,6 +23,7 @@ function learnRebuildMagicByNum(num){
 
 function createMagicList(data,funcCallBack){
     var listLength = data.listLength
+    var titleValue = data.titleValue
     var magicNameList = data.magicNameList
     var magicIconList = data.magicIconList
     var magicLvList = data.magicLvList
@@ -96,10 +97,20 @@ function createMagicList(data,funcCallBack){
     var shootCountList_82 = data.shootCountList_82
     var GSpeedList_83 = data.GSpeedList_83
 
-    //$.Msg("=======getRandomMagicListLUATOJS======")
+    $.Msg("=======getRandomMagicListLUATOJS======")
     $("#UIMagicListPanelBox").AddClass("UIMagicListPanelBox")
     var UIMagicListPanelBg = $.CreatePanel('Panel', $("#UIMagicListPanelBox"),"UIMagicListPanelBg");
     UIMagicListPanelBg.AddClass("UIMagicListPanelBg")
+
+
+    var UIMagicListPanelTitle = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"UIMagicListPanelTitle");
+    UIMagicListPanelTitle.AddClass("UIMagicListPanelTitle")
+    var UIMagicListLabelTitle = $.CreatePanel('Label', $("#UIMagicListPanelTitle"),"UIMagicListLabelTitle");
+    UIMagicListLabelTitle.AddClass("UIMagicListLabelTitle")
+    UIMagicListLabelTitle.text = titleValue
+    var UIMagicTitleCloseBtn = $.CreatePanel('Panel', $("#UIMagicListPanelTitle"),"UIMagicTitleCloseBtn");
+    UIMagicTitleCloseBtn.AddClass("UIMagicListTitleCloseBtn") 
+    UIMagicTitleCloseBtn.SetPanelEvent("onactivate",function(){closeMagicList()})
 
     var UIMagicListPanel = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"UIMagicListPanel");
     UIMagicListPanel.AddClass("UIMagicListPanel")
@@ -923,6 +934,7 @@ function createMagicList(data,funcCallBack){
         }
 
     }
+    /*
     var magicButtonBg = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"magicButtonBg");
     magicButtonBg.AddClass("magicButtonBg")
 
@@ -931,7 +943,7 @@ function createMagicList(data,funcCallBack){
     shopCancel.AddClass("magicButton")
     shopCancel.text = "关闭"
     shopCancel.SetPanelEvent("onactivate",function(){closeMagicList()})
-
+*/
 }
 
 function getRandomMagicListLUATOJS(data){   
@@ -954,9 +966,15 @@ function getRebuildMagicListToForgetLUATOJS(data){
 
     var UIMagicListPanelTitle = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"UIMagicListPanelTitle");
     UIMagicListPanelTitle.AddClass("UIMagicListPanelTitleForRebuild")
+
+
     var UIMagicListLabelTitle = $.CreatePanel('Label', $("#UIMagicListPanelTitle"),"UIMagicListLabelTitle");
     UIMagicListLabelTitle.AddClass("UIMagicListLabelTitleForRebuild")
     UIMagicListLabelTitle.text = "选择遗忘一个技能并重修"
+    var UIMagicTitleCloseBtn = $.CreatePanel('Panel', $("#UIMagicListPanelTitle"),"UIMagicTitleCloseBtn");
+    UIMagicTitleCloseBtn.AddClass("UIMagicListTitleCloseBtn") 
+    UIMagicTitleCloseBtn.SetPanelEvent("onactivate",function(){closeMagicList()})
+
 
     var UIMagicListPanel = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"UIMagicListPanel1");
     UIMagicListPanel.AddClass("UIMagicListPanel")
@@ -1002,7 +1020,7 @@ function getRebuildMagicListToForgetLUATOJS(data){
         }
        
     }
-
+/*
     var magicButtonBg = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"magicButtonBg");
     magicButtonBg.AddClass("magicButtonBg")
 
@@ -1011,6 +1029,7 @@ function getRebuildMagicListToForgetLUATOJS(data){
     shopCancel.AddClass("magicButton")
     shopCancel.text = "关闭"
     shopCancel.SetPanelEvent("onactivate",function(){closeMagicList()})
+    */
 }
 
 
