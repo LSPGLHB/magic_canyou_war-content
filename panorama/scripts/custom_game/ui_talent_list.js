@@ -23,11 +23,11 @@ function getRandomTalentListLUATOJS(data){
     var UITalentListTitleLabel = $.CreatePanel('Label', $("#UITalentListTitlePanel"),"UITalentListTitleLabel");
     UITalentListTitleLabel.AddClass("UITalentListTitleLabel")
     UITalentListTitleLabel.text = "选择你的铭文"
-
+/*
     var UITitleCloseBtn = $.CreatePanel('Panel', $("#UITalentListTitlePanel"),"UITalentTitleCloseBtn");
     UITitleCloseBtn.AddClass("UITalentListTitleCloseBtn") 
     UITitleCloseBtn.SetPanelEvent("onactivate",function(){closeTalentList()})
-
+*/
 
     var UITalentListPanel = $.CreatePanel('Panel', $("#UITalentListPanelBg"),"UITalentListPanel");
     UITalentListPanel.AddClass("UITalentListPanel")

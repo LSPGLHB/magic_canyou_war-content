@@ -22,11 +22,11 @@ function getRandomContractListLUATOJS(data){
     var UIContractTitleLabel = $.CreatePanel('Label', $("#UIContractTitlePanel"),"UIContractTitleLabel");
     UIContractTitleLabel.AddClass("UIContractTitleLabel")
     UIContractTitleLabel.text = "选择你的契约"
-
+/*
     var UITitleCloseBtn = $.CreatePanel('Panel', $("#UIContractTitlePanel"),"UIContractTitleCloseBtn");
     UITitleCloseBtn.AddClass("UIContractListTitleCloseBtn") 
     UITitleCloseBtn.SetPanelEvent("onactivate",function(){closeContractList()})
-
+*/
 
     for(i=1;i<=listLength;i++){
         if(i==1 || i==4){

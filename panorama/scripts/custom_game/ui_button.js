@@ -104,8 +104,6 @@ Game.AddCommand(
 
 
 function playerStatusActive(){
-    //initJS()
-    
 
     var mainUI = $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements")
     var UIShopButton = mainUI.FindChildTraverse("UIPlayerStatusButton")

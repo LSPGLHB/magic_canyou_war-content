@@ -4,7 +4,7 @@
 }
 .UIMagicListPanelBox{
     width:100%;
-    height:700px;
+    height:653px;
     margin-top:150px;
     padding-left:50%;
 }
@@ -24,6 +24,7 @@
     border-bottom: 1px solid #111111;
     flow-children:right;
 }
+/*
 .UIMagicListTitleCloseBtn{
     width: 60px;
     height: 60px;
@@ -38,9 +39,9 @@
     background-color: #d80000ee;
     wash-color:#ffffff;
 }
-
+*/
 .UIMagicListLabelTitle{
-    width:1560px;
+    width:1620px;
     height:60px;
     padding: 15px 30px;
     font-size: 30px;
@@ -70,7 +71,7 @@
     flow-children:right;
 }
 .UIMagicListLabelTitleForRebuild{
-    width:960px;
+    width:1020px;
     height:60px;
     padding: 15px 30px;
     font-size: 30px;
@@ -88,14 +89,20 @@
 }
 
 
+
+
 .magicPanel{
     width:500px;
-    height:580px;
+    height:533px;
+    margin-left:30px;
     background-color:#111111dd;
     border: 1px solid #000000;
-    margin-left:30px;
     flow-children:down;
 }
+.magicPanel:hover{
+    border: 1px solid #FF7F00;
+}
+
 .magicPanelForRebuild{
     width:300px;
     height:125px;
@@ -191,7 +198,7 @@
     font-size: 20px;
     padding: 10px;
     flow-children:right;
-    border-bottom: 2px solid #0e212d;
+
     border-top: 2px solid #0e212d;
 }
 .magicSpecialValBox1{
@@ -241,7 +248,7 @@
 }
 
 
-
+/*
 .learnMagicButton{
     width:100%;
     padding: 9px 0 0 0;
@@ -258,7 +265,7 @@
     border: 1px solid #888888;
 }
 
-
+*/
 
 
 .magicButtonBg{

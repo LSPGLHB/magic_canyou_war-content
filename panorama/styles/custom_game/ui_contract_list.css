@@ -24,14 +24,14 @@
     flow-children:right;
 }
 .UIContractTitleLabel{
-    width: 900px;
+    width: 960px;
     height:60px;
     padding: 15px 30px;
     font-size: 30px;
     color: #FF7F00;
     text-align: center;
 }
-
+/*
 .UIContractListTitleCloseBtn{
     width: 60px;
     height: 60px;
@@ -46,7 +46,7 @@
     background-color: #d80000ee;
     wash-color:#ffffff;
 }
-
+*/
 .UIContractListPanel{
     height: 260px;
     flow-children:right;

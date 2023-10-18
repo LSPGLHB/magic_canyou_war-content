@@ -84,7 +84,7 @@ function getShopItemListLUATOJS(data) {
         //buyItemButton.SetPanelEvent("onactivate",function(){shopBuy(1)})
        
     }
-
+/*
     var shopButtonBg = $.CreatePanel('Panel', $("#UIShopBg"),"shopButtonBg");
     shopButtonBg.AddClass("shopButtonBg")
 
@@ -99,7 +99,7 @@ function getShopItemListLUATOJS(data) {
     shopCancel.AddClass("shopButton")
     shopCancel.text = "关闭"
     shopCancel.SetPanelEvent("onactivate",function(){shopClose()})
-
+*/
 }
 
 
