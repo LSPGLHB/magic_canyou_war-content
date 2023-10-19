@@ -21,6 +21,11 @@ function learnRebuildMagicByNum(num){
     GameEvents.SendCustomGameEventToServer( "getRebuildMagicListByNameJSTOLUA", {num:num})
 }
 
+function getRandomGoldAndCloseList(){
+    GameEvents.SendCustomGameEventToServer( "getRandomGoldJSTOLUA", {min:20,max:50})
+    GameEvents.SendCustomGameEventToServer( "closeMagicListJSTOLUA", {})
+}
+
 function createMagicList(data,funcCallBack){
     var listLength = data.listLength
     var titleValue = data.titleValue
@@ -102,9 +107,6 @@ function createMagicList(data,funcCallBack){
     var UIMagicListPanelBg = $.CreatePanel('Panel', $("#UIMagicListPanelBox"),"UIMagicListPanelBg");
     UIMagicListPanelBg.AddClass("UIMagicListPanelBg")
 
-    
-
-
     var UIMagicListPanelTitle = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"UIMagicListPanelTitle");
     UIMagicListPanelTitle.AddClass("UIMagicListPanelTitle")
     var UIMagicListLabelTitle = $.CreatePanel('Label', $("#UIMagicListPanelTitle"),"UIMagicListLabelTitle");
@@ -121,17 +123,12 @@ function createMagicList(data,funcCallBack){
     for(i=1;i<=listLength;i++){
         //var UIMagicListBtn = $.CreatePanel('Panel', $("#UIMagicListPanel"),"UIMagicListBtn"+i);
         //UIMagicListBtn.AddClass("UIMagicListBtn")
-
-
         var magicPanel = $.CreatePanel('Panel', $("#UIMagicListPanel"),"magicPanel"+i);
         magicPanel.AddClass("magicPanel")
-
         magicPanel.SetPanelEvent("onactivate",function(num){return function(){funcCallBack(num)}}(i))
         if (i == 1) {
-            magicPanel.AddClass("magicPanel_firstChild")
+            magicPanel.AddClass("magicPanel_firstChild")  
         }
-
-
 
         var magicTopBanner = $.CreatePanel('Panel', $("#magicPanel"+i),"magicTopBanner"+i);
         magicTopBanner.AddClass("magicTopBanner")
@@ -978,7 +975,7 @@ function getRebuildMagicListToForgetLUATOJS(data){
 
     var UIMagicListLabelTitle = $.CreatePanel('Label', $("#UIMagicListPanelTitle"),"UIMagicListLabelTitle");
     UIMagicListLabelTitle.AddClass("UIMagicListLabelTitleForRebuild")
-    UIMagicListLabelTitle.text = "选择遗忘一个技能并重修"
+    UIMagicListLabelTitle.text = "选择一个技能重修或获得金币奖励"
     /*
     var UIMagicTitleCloseBtn = $.CreatePanel('Panel', $("#UIMagicListPanelTitle"),"UIMagicTitleCloseBtn");
     UIMagicTitleCloseBtn.AddClass("UIMagicListTitleCloseBtn") 
@@ -989,10 +986,10 @@ function getRebuildMagicListToForgetLUATOJS(data){
     UIMagicListPanel.AddClass("UIMagicListPanel")
 
     for(i=1;i<=listLength;i++){
-
-
         var magicPanel = $.CreatePanel('Panel', $("#UIMagicListPanel1"),"magicPanel"+i);
         magicPanel.AddClass("magicPanelForRebuild")
+        magicPanel.SetPanelEvent("onactivate",function(num){return function(){rebuildMagicByNum(num)}}(i))
+
         if (i== 1) {
             magicPanel.AddClass("magicPanel_firstChild")
         }
@@ -1014,12 +1011,13 @@ function getRebuildMagicListToForgetLUATOJS(data){
         var magicShowName = "#DOTA_Tooltip_ability_"+ magicNameList[i]
         magicNameBox.text = $.Localize(magicShowName)
 
-
-
+        /*
         var learnMagicButton = $.CreatePanel('Label', $("#magicPanel"+i),"learnMagicButton"+i);
         learnMagicButton.AddClass("learnMagicButton")
         learnMagicButton.text = "遗忘"
+        */
         //var magicName = magicNameList[i]
+        /*
         if(i==1){
             learnMagicButton.SetPanelEvent("onactivate",function(){rebuildMagicByNum(1)})
         }else if(i==2){
@@ -1027,18 +1025,18 @@ function getRebuildMagicListToForgetLUATOJS(data){
         }else if(i==3){
             learnMagicButton.SetPanelEvent("onactivate",function(){rebuildMagicByNum(3)})
         }
-       
+       */
     }
-/*
+
     var magicButtonBg = $.CreatePanel('Panel', $("#UIMagicListPanelBg"),"magicButtonBg");
     magicButtonBg.AddClass("magicButtonBg")
 
     var shopCancel = $.CreatePanel('Label', $("#magicButtonBg"),"magicCancel");
     shopCancel.AddClass("magicCancel")
     shopCancel.AddClass("magicButton")
-    shopCancel.text = "关闭"
-    shopCancel.SetPanelEvent("onactivate",function(){closeMagicList()})
-    */
+    shopCancel.text = "获取随机金币奖励(20-50)"
+    shopCancel.SetPanelEvent("onactivate",function(){getRandomGoldAndCloseList()})
+
 }
 
 

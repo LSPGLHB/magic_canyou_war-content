@@ -14,19 +14,20 @@
 .UITalentPanelListBox{
     background-color:#11111199;
     width: 263px;
-    height:30px;
+    height:28px;
     padding:1px;
     flow-children:right;
 }
 
 .UITalentPanelIcon{
-    width:30px;
-    height:30px;
+    width:28px;
+    height:28px;
 }
+
 .UITalentPanelDescribe{
     padding:6px;
     width:200px;
-    height:100px;
+    height:28px; 
     font-size: 16px;
     color: #ffffff; 
 }

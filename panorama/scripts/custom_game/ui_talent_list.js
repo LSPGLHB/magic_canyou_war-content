@@ -28,7 +28,6 @@ function getRandomTalentListLUATOJS(data){
     UITitleCloseBtn.AddClass("UITalentListTitleCloseBtn") 
     UITitleCloseBtn.SetPanelEvent("onactivate",function(){closeTalentList()})
 */
-
     var UITalentListPanel = $.CreatePanel('Panel', $("#UITalentListPanelBg"),"UITalentListPanel");
     UITalentListPanel.AddClass("UITalentListPanel")
 
@@ -36,7 +35,7 @@ function getRandomTalentListLUATOJS(data){
 
         var talentPanel = $.CreatePanel('Panel', $("#UITalentListPanel"),"talentPanel"+i);
         talentPanel.AddClass("talentPanel")
-
+        talentPanel.SetPanelEvent("onactivate",(function(num,talentType){return function(){learnTalentByNum(num,talentType)}}(i,talentType)))
 
         var talentTopBanner = $.CreatePanel('Panel', $("#talentPanel"+i),"talentTopBanner"+i);
         talentTopBanner.AddClass("talentTopBanner")
@@ -58,12 +57,12 @@ function getRandomTalentListLUATOJS(data){
         talentDescribe.AddClass("talentDescribe")
         var talentDescribeLoc = "#"+talentNameList[i]+"_Description"
         talentDescribe.text = $.Localize(talentDescribeLoc)
-
+/*
         var learnTalentButton = $.CreatePanel('Label', $("#talentPanel"+i),"learntalentButton"+i);
         learnTalentButton.AddClass("learntalentButton")
         learnTalentButton.text = "选择"
         learnTalentButton.SetPanelEvent("onactivate",(function(num,talentType){return function(){learnTalentByNum(num,talentType)}}(i,talentType)))
-
+*/
     }
 /*
     var talentButtonBg = $.CreatePanel('Panel', $("#UITalentListPanelBg"),"talentButtonBg");
