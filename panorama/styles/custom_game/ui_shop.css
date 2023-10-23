@@ -5,26 +5,28 @@
 
 .UIShopBox{
     width:100%;
-    height:610px;
+    height:620px;
     margin-top:160px;
     padding-left:50%;
 }
+
 .UIShopBg{
-    width: 960px;
-    height:610px;
-    margin-left: -480px;
+    width: 1110px;
+    height:620px;
+    margin-left: -555px;
     background-color:#111111dd;
     border: 1px solid #111111;
     flow-children:down;
 }
+
 .UIShopTitlePanel{
-    width: 960px;
+    width: 100%;
     height:60px;
     flow-children:right;
 }
 
 .UIShopTitleTitle{
-    width: 900px;
+    width: 1050px;
     height:60px;
     padding: 15px 30px;
     font-size: 30px;
@@ -51,23 +53,40 @@
 }
 
 .UIShop{
-    height: 260px;
+    height: 223px;
     flow-children:right;
     padding: 30px 0 0 30px;
 }
+
 .shop_item_img{
     width:85px;
     height:64px;
 }
 
-.shopItemPanel{
-    width:280px;
-    height:250px;
+.shopItemPanelBG{
+    width:332px;
+    height:215px;
+    margin-right:30px;
     background-color:#111111dd;
     border: 1px solid #000000;
-    margin-right:30px;
+}
+.shopItemPanelBG:hover{
+    border: 1px solid #FF7F00;
+}
+.shopItemPanel{
+    width:330px;
+    height:213px;
     flow-children:down;
 }
+.shopItemPanelLabel{
+    width: 100%;
+    height:100%;
+    font-size: 60px;
+    padding-top:60px;
+    text-align: center;
+    color: #666;
+}
+
 .itemTopBanner{
     width:100%;
     height: 84px;
@@ -76,12 +95,12 @@
     flow-children:right;
 }
 .itemMsg{
-    width:180px;
+    width:230px;
     height: 84px;
     flow-children:down;
 }
 .itemName{
-    width:180px;
+    width:230px;
     padding: 5px 0px 5px 5px;
     height: 30px;
     text-align: left;
@@ -93,7 +112,7 @@
     flow-children:right;
 }
 .itemCost{
-    width:160px;
+    width:210px;
     padding: 5px 10px;
     height: 30px;
     text-align: left;
@@ -110,25 +129,8 @@
     background-size: 100% 100%;
 }
 
-
-.buyItemButton{
-    width:100%;
-    padding: 5px 0 0 0;
-    height: 32px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 20px;
-    color: #ffffff;
-    background-color:#920000ee;
-}
-
-.buyItemButton:hover{
-    background-color:#d80000ee;
-    border: 1px solid #888888;
-}
-
 .itemDescribe{
-    width: 270px;
+    width: 100%;
     padding: 5px;
     height: 112px;
     text-align: left;
@@ -138,38 +140,27 @@
     flow-children:right;
 }
 
-.itemDescribeLabel{
 
-    
-}
-
-
-.shopButtonBox{
-    width:80px;
-    height:50px;
-    background-color:#920000ee;
-    border: 1px solid #888888;
-}
 
 .shopButtonBg{
     width:100%;
-    height:60px;
-    background-color:#111111dd;
+    height:80px;
+    background-color:#0e212d;
     border: 1px solid #111111;
     margin-top: 30px;
-    
+
     flow-children:right;
 }
 .shopButton{
-    width: 160px;
-    height: 32px;
+    width: 200px;
+    height: 50px;
     text-align: center;
     vertical-align: middle;
-    font-size: 20px;
-    padding-top:5px;
+    font-size: 26px;
+    padding-top: 12px;
     color: #ffffff;
     background-color:#920000ee;
-    margin: 0 160px;
+    border: 1px solid #111111;
 }
 
 .shopButton:hover{
@@ -177,9 +168,15 @@
     border: 1px solid #888888;
 }
 
-.shopRefresh{
-    
+.shopLock{
+    margin-left:237px;
 }
-.shopCancel{
-    
+.lock{
+    background-color:#FF7F00;
+}
+.lock:hover{
+    background-color:#F1710f;
+}
+.shopRefresh{
+    margin-left:237px;
 }

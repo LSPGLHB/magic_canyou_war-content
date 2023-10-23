@@ -29,25 +29,22 @@ function getRandomContractListLUATOJS(data){
 */
 
     for(i=1;i<=listLength;i++){
-        if(i==1 || i==4){
-
+        var contractPanel
+        if(i<4){
             if(i==1){
                 var UIContractListPanel = $.CreatePanel('Panel', $("#UIContractListPanelBg"),"UIContractListPanel1");
                 UIContractListPanel.AddClass("UIContractListPanel")
             }
+            contractPanel = $.CreatePanel('Panel', $("#UIContractListPanel1"),"contractPanel"+i);
+        }else{
             if(i==4){
                 var UIContractListPanel = $.CreatePanel('Panel', $("#UIContractListPanelBg"),"UIContractListPanel2");
                 UIContractListPanel.AddClass("UIContractListPanel")
             }
+            contractPanel = $.CreatePanel('Panel', $("#UIContractListPanel2"),"contractPanel"+i);    
         }
-        var contractPanel
-        if(i<4){
-            contractPanel = $.CreatePanel('Panel', $("#UIContractListPanel1"),"contractPanel"+i);
-            contractPanel.AddClass("contractPanel")
-        }else{
-            contractPanel = $.CreatePanel('Panel', $("#UIContractListPanel2"),"contractPanel"+i);
-            contractPanel.AddClass("contractPanel")
-        }
+        contractPanel.AddClass("contractPanel")
+        contractPanel.SetPanelEvent("onactivate",function(num){return function(){learnContractByNum(num)}}(i))
 
         var contractTopBanner = $.CreatePanel('Panel', $("#contractPanel"+i),"contractTopBanner"+i);
         contractTopBanner.AddClass("contractTopBanner")
@@ -68,12 +65,12 @@ function getRandomContractListLUATOJS(data){
         contractDescribe.AddClass("contractDescribe")
         contractDescribe.html = true
         contractDescribe.text = contractDescribeList[i]
-
+/*
         var learnContractButton = $.CreatePanel('Label', $("#contractPanel"+i),"learnContractButton"+i);
         learnContractButton.AddClass("learnContractButton")
         learnContractButton.text = "签订"
         learnContractButton.SetPanelEvent("onactivate",function(num){return function(){learnContractByNum(num)}}(i))
-
+*/
 
 
 

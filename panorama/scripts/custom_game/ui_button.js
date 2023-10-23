@@ -17,7 +17,7 @@ function checkShopLUATOJS(data){
     //var UIShopButton = shopUI.FindChildTraverse("UIShopButton")
     var UIShopButton =  $('#UIShopButton')
     var shopButtonText = UIShopButton.FindChildTraverse("shopButtonText")
-    //$.Msg(playerGold)
+   
     if (shopFlag == "active" ){
         UIShopButton.RemoveClass("shopUnknow")
         UIShopButton.AddClass("shopActive")
@@ -25,6 +25,7 @@ function checkShopLUATOJS(data){
     }else{
         if(UIShopButton.BHasClass("shopOpen")){
             UIShopButton.RemoveClass("shopOpen")
+            //$.Msg("shopCloseshopCloseshopCloseshopCloseshopCloseshopCloseshopCloseshopCloseshopCloseshopCloseshopCloseshopCloseshopCloseshopClose")
             shopClose()
         }
         UIShopButton.RemoveClass("shopActive")
@@ -63,8 +64,8 @@ function shopUnknow(){
 }
 
 //商店快捷键设置
-const command = `On${"Space"}${Date.now()}`;
-Game.CreateCustomKeyBind("Space", `+${command}`);
+const command = `On${"B"}${Date.now()}`;
+Game.CreateCustomKeyBind("B", `+${command}`);
 Game.AddCommand(
     `+${command}`,
     () => {
@@ -94,7 +95,6 @@ Game.AddCommand(
         }else if (shopUnknow){
             $.Msg("==============shopUnknow==========")
         }
-
     },
     ``,
     1 << 32

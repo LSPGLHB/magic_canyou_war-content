@@ -1,7 +1,9 @@
 GameEvents.Subscribe( "getShopItemListLUATOJS", getShopItemListLUATOJS);
-GameEvents.Subscribe( "checkGoldLUATOJS", checkGold);
+GameEvents.Subscribe( "checkGoldLUATOJS", checkGoldLUATOJS);
 
 function getShopItemListLUATOJS(data) {
+    var lock = data.lock
+    var refreshCost = data.refreshCost
     var nameList = data.randomItemNameList
     var costList = data.randomItemCostList
     var textureNameList = data.randomItemTextureNameList
@@ -30,80 +32,86 @@ function getShopItemListLUATOJS(data) {
 
     for( i = 1; i <= data.num; i++ ){
         if (i < 4){
-            var shopItemPanel = $.CreatePanel('Panel', $("#UIShop1"),"shopItemPanel"+i);
-            shopItemPanel.AddClass("shopItemPanel")
+            var shopItemPanelBG = $.CreatePanel('Panel', $("#UIShop1"),"shopItemPanelBG"+i);
+            shopItemPanelBG.AddClass("shopItemPanelBG")
         }else{
-            var shopItemPanel = $.CreatePanel('Panel', $("#UIShop2"),"shopItemPanel"+i);
-            shopItemPanel.AddClass("shopItemPanel")
+            var shopItemPanelBG = $.CreatePanel('Panel', $("#UIShop2"),"shopItemPanelBG"+i);
+            shopItemPanelBG.AddClass("shopItemPanelBG")
         }
 
-        var itemTopBanner = $.CreatePanel('Panel', $("#shopItemPanel"+i),"itemTopBanner"+i);
-        itemTopBanner.AddClass("itemTopBanner")
+        var shopItemPanel = $.CreatePanel('Panel', $("#shopItemPanelBG"+i),"shopItemPanel"+i);
+        shopItemPanel.AddClass("shopItemPanel")
 
-        var itemImage = $.CreatePanel('Image', $("#itemTopBanner"+i),"itemImg"+i);
-        itemImage.AddClass("shop_item_img")
-        var iconSrc = "file://{images}/custom_game/shop_item/" + textureNameList[i] + ".png"
-        itemImage.SetImage(iconSrc)
-    
-        var itemMsg = $.CreatePanel('Panel', $("#itemTopBanner"+i),"itemMsg"+i);
-        itemMsg.AddClass("itemMsg")
+        if (nameList[i] == "sellOut"){
+            var shopItemPanelLabel = $.CreatePanel('Label', $("#shopItemPanel"+i),"shopItemPanelLabel"+i);
+            shopItemPanelLabel.AddClass("shopItemPanelLabel")
+            shopItemPanelLabel.text = "Sell Out"
+        }
 
+        if (nameList[i] != "sellOut") {
+            shopItemPanel.SetPanelEvent("onactivate",(function(num){return function(){shopBuy(num)}}(i)))
 
+            var itemTopBanner = $.CreatePanel('Panel', $("#shopItemPanel"+i),"itemTopBanner"+i);
+            itemTopBanner.AddClass("itemTopBanner")
 
-        var itemName = $.CreatePanel('Label', $("#itemMsg"+i),"itemName"+i);
-        itemName.AddClass("itemName")
-        itemName.html = true
-        itemName.text = $.Localize("#DOTA_Tooltip_ability_" + nameList[i])
-
-
-        var itemCostPanel = $.CreatePanel('Panel', $("#itemMsg"+i),"itemCostPanel"+i);
-        itemCostPanel.AddClass("itemCostPanel")
-
-        var goldIcon = $.CreatePanel('Panel', $("#itemCostPanel"+i),"goldIcon"+i);
-        goldIcon.AddClass("goldIcon")
-
-        var itemCost = $.CreatePanel('Label', $("#itemCostPanel"+i),"itemCost"+i);
-        itemCost.AddClass("itemCost")
-        var itemCostVal = costList[i]
-        itemCost.text = itemCostVal
-
+            var itemImage = $.CreatePanel('Image', $("#itemTopBanner"+i),"itemImg"+i);
+            itemImage.AddClass("shop_item_img")
+            var iconSrc = "file://{images}/custom_game/shop_item/" + textureNameList[i] + ".png"
+            itemImage.SetImage(iconSrc)
         
-        var itemDescribeStr = $.Localize("#DOTA_Tooltip_ability_"+ nameList[i] +"_Description")
+            var itemMsg = $.CreatePanel('Panel', $("#itemTopBanner"+i),"itemMsg"+i);
+            itemMsg.AddClass("itemMsg")
 
-        var itemDescribe = $.CreatePanel('Label', $("#shopItemPanel"+i),"itemDescribe"+i);
-        itemDescribe.AddClass("itemDescribe")
-        itemDescribe.html = true
-        itemDescribe.text = itemDescribeStr
+            var itemName = $.CreatePanel('Label', $("#itemMsg"+i),"itemName"+i);
+            itemName.AddClass("itemName")
+            itemName.html = true
+            itemName.text = $.Localize("#DOTA_Tooltip_ability_" + nameList[i])
 
+            var itemCostPanel = $.CreatePanel('Panel', $("#itemMsg"+i),"itemCostPanel"+i);
+            itemCostPanel.AddClass("itemCostPanel")
 
-        var buyItemButton = $.CreatePanel('Label', $("#shopItemPanel"+i),"buyItemButton"+i);
-        buyItemButton.AddClass("buyItemButton")
-        
-        buyItemButton.text = $.Localize("#Buy")
-        buyItemButton.SetPanelEvent("onactivate",(function(num){return function(){shopBuy(num)}}(i)))
-        //buyItemButton.SetPanelEvent("onactivate",function(){shopBuy(1)})
-       
+            var goldIcon = $.CreatePanel('Panel', $("#itemCostPanel"+i),"goldIcon"+i);
+            goldIcon.AddClass("goldIcon")
+
+            var itemCost = $.CreatePanel('Label', $("#itemCostPanel"+i),"itemCost"+i);
+            itemCost.AddClass("itemCost")
+            var itemCostVal = costList[i]
+            itemCost.text = itemCostVal
+
+            var itemDescribeStr = $.Localize("#DOTA_Tooltip_ability_"+ nameList[i] +"_Description")
+            var itemDescribe = $.CreatePanel('Label', $("#shopItemPanel"+i),"itemDescribe"+i);
+            itemDescribe.AddClass("itemDescribe")
+            itemDescribe.html = true
+            itemDescribe.text = itemDescribeStr
+        }
     }
-/*
+
     var shopButtonBg = $.CreatePanel('Panel', $("#UIShopBg"),"shopButtonBg");
     shopButtonBg.AddClass("shopButtonBg")
+
+
+    var shopLock = $.CreatePanel('Label', $("#shopButtonBg"),"shopLock");
+    shopLock.AddClass("shopLock")
+    shopLock.AddClass("shopButton")
+    shopLock.text = "锁定"
+    if (lock == 1){
+        shopLock.AddClass("lock")
+        shopLock.text = "已锁定"
+    }
+    
+    shopLock.SetPanelEvent("onactivate",function(){shopLockFunc()})
 
     var shopRefresh = $.CreatePanel('Label', $("#shopButtonBg"),"shopRefresh");
     shopRefresh.AddClass("shopRefresh")
     shopRefresh.AddClass("shopButton")
-    shopRefresh.text = "刷新"
+    shopRefresh.html = true
+    shopRefresh.text = "刷新(-" + refreshCost + ")"
     shopRefresh.SetPanelEvent("onactivate",function(){shopRefreshButton()})
 
-    var shopCancel = $.CreatePanel('Label', $("#shopButtonBg"),"shopCancel");
-    shopCancel.AddClass("shopCancel")
-    shopCancel.AddClass("shopButton")
-    shopCancel.text = "关闭"
-    shopCancel.SetPanelEvent("onactivate",function(){shopClose()})
-*/
 }
 
 
-function checkGold(data){
+function checkGoldLUATOJS(data){
     var playerGold = data.playerGold
     var mainUI = $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements");
     var UIShopButton = mainUI.FindChildTraverse("UIShopButton")
@@ -126,7 +134,31 @@ function shopRefreshButton(){
 function shopBuy(num){
 
     $.Msg("==============shopBuy==========",num)
+
+    //var mainUI = $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements");
+    //mainUI.FindChildTraverse("shopItemPanel"+num).style.visibility = "collapse";
     GameEvents.SendCustomGameEventToServer( "buyShopJSTOLUA", {num:num})
+
+    GameEvents.SendCustomGameEventToServer( "closeShopJSTOLUA", {})
+    GameEvents.SendCustomGameEventToServer( "openShopJSTOLUA", {})
 }
 
+function shopLockFunc(){
+    $.Msg("==============shopLock==========")
+    /*
+    var mainUI = $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements");
+    var lockBtn = mainUI.FindChildTraverse("shopLock")
+    var locking = lockBtn.BHasClass("lock")
+    if(locking){
+        lockBtn.RemoveClass("lock")
+        lockBtn.text = "锁定"
+    }else{
+        lockBtn.AddClass("lock")
+        lockBtn.text = "已锁定"
+    } */
+    
+    GameEvents.SendCustomGameEventToServer( "lockShopJSTOLUA", {})
+    GameEvents.SendCustomGameEventToServer( "closeShopJSTOLUA", {})
+    GameEvents.SendCustomGameEventToServer( "openShopJSTOLUA", {})
+}
 
