@@ -152,3 +152,64 @@
                         "value"{
                             "value0"    "sounds/ui/coins_big.vsnd"
 }   }   }   }   }   }   }
+
+"scene_voice_shop_open"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/shop_available.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_shop_close"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/shop_unavailable.vsnd"
+}   }   }   }   }   }   }
+
+
+"scene_voice_shop_buy"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/buy.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_shop_refresh"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/item_recipe_drop_shop.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_shop_item_upgrade"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/hero_picked.vsnd"
+}   }   }   }   }   }   }
