@@ -213,3 +213,39 @@
                         "value"{
                             "value0"    "sounds/ui/hero_picked.vsnd"
 }   }   }   }   }   }   }
+
+"scene_voice_player_fly"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/portal_loop_alt.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_player_land"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ambient/twin_gate_in.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_player_disable"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/panorama/panorama_rollover_lg_01.vsnd"
+}   }   }   }   }   }   }
