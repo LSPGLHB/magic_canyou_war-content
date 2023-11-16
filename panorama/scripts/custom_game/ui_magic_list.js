@@ -975,7 +975,7 @@ function getRebuildMagicListToForgetLUATOJS(data){
 
     var UIMagicListLabelTitle = $.CreatePanel('Label', $("#UIMagicListPanelTitle"),"UIMagicListLabelTitle");
     UIMagicListLabelTitle.AddClass("UIMagicListLabelTitleForRebuild")
-    UIMagicListLabelTitle.text = "选择一个技能重修或获得金币奖励"
+    UIMagicListLabelTitle.text = "选择一个法术重修或获得金币奖励"
     /*
     var UIMagicTitleCloseBtn = $.CreatePanel('Panel', $("#UIMagicListPanelTitle"),"UIMagicTitleCloseBtn");
     UIMagicTitleCloseBtn.AddClass("UIMagicListTitleCloseBtn") 

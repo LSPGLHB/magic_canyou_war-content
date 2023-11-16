@@ -131,14 +131,12 @@ function shopRefreshButton(){
     $.Msg("==============shopRefresh==========")
     GameEvents.SendCustomGameEventToServer( "refreshShopJSTOLUA", {})
 }
+
 function shopBuy(num){
-
     $.Msg("==============shopBuy==========",num)
-
     //var mainUI = $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements");
     //mainUI.FindChildTraverse("shopItemPanel"+num).style.visibility = "collapse";
     GameEvents.SendCustomGameEventToServer( "buyShopJSTOLUA", {num:num})
-
     GameEvents.SendCustomGameEventToServer( "closeShopJSTOLUA", {})
     GameEvents.SendCustomGameEventToServer( "openShopJSTOLUA", {})
 }
@@ -156,7 +154,6 @@ function shopLockFunc(){
         lockBtn.AddClass("lock")
         lockBtn.text = "已锁定"
     } */
-    
     GameEvents.SendCustomGameEventToServer( "lockShopJSTOLUA", {})
     GameEvents.SendCustomGameEventToServer( "closeShopJSTOLUA", {})
     GameEvents.SendCustomGameEventToServer( "openShopJSTOLUA", {})

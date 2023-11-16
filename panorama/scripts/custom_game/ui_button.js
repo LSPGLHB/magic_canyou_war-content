@@ -1,10 +1,11 @@
 //扫描商人
 GameEvents.Subscribe( "checkShopLUATOJS", checkShopLUATOJS)
+GameEvents.Subscribe( "shopDoorOperationLUATOJS", shopDoorOperationLUATOJS)
 GameEvents.Subscribe( "initJS", initJS)
 
 //CSS隐藏不能lua隐藏的东西
 function initJS(){
-    $.Msg("initJSinitJSinitJSinitJSinitJSinitJS")
+    //$.Msg("initJSinitJSinitJSinitJSinitJSinitJS")
     var tempPanel = $.GetContextPanel().GetParent().GetParent().GetParent().FindChildTraverse("HUDElements")
     tempPanel.FindChildTraverse("Ability6").style.visibility = "collapse";//隐藏本该隐藏的技能
     tempPanel.FindChildTraverse("Ability7").style.visibility = "collapse";//隐藏本该隐藏的技能
@@ -78,27 +79,37 @@ Game.AddCommand(
     `-${command}`,
     () => {
         // key up callback
-        var UIShopButton =  $('#UIShopButton')
-        var shopOpen = UIShopButton.BHasClass("shopOpen")
-        var shopActive = UIShopButton.BHasClass("shopActive")
-        var shopUnknow = UIShopButton.BHasClass("shopUnknow")
-        if(shopActive){
-            if(shopOpen){
-                UIShopButton.RemoveClass("shopOpen")
-                $.Msg("==============shopClose==========")
-                GameEvents.SendCustomGameEventToServer( "closeShopJSTOLUA", {})
-            }else{
-                UIShopButton.AddClass("shopOpen")
-                $.Msg("==============shopOpen==========")
-                GameEvents.SendCustomGameEventToServer( "openShopJSTOLUA", {})
-            }
-        }else if (shopUnknow){
-            $.Msg("==============shopUnknow==========")
-        }
+        shopDoorOperation()
     },
     ``,
     1 << 32
 );
+
+function shopDoorOperation(){
+    var UIShopButton =  $('#UIShopButton')
+    var shopOpen = UIShopButton.BHasClass("shopOpen")
+    var shopActive = UIShopButton.BHasClass("shopActive")
+    var shopUnknow = UIShopButton.BHasClass("shopUnknow")
+    if(shopActive){
+        if(shopOpen){
+            UIShopButton.RemoveClass("shopOpen")
+            $.Msg("==============shopClose==========")
+            GameEvents.SendCustomGameEventToServer( "closeShopJSTOLUA", {})
+        }else{
+            UIShopButton.AddClass("shopOpen")
+            $.Msg("==============shopOpen==========")
+            GameEvents.SendCustomGameEventToServer( "openShopJSTOLUA", {})
+        }
+    }else if (shopUnknow){
+        $.Msg("==============shopUnknow==========")
+       
+    }
+}
+
+function shopDoorOperationLUATOJS(data){
+    $.Msg("==============shop==========")
+    shopDoorOperation()
+}
 
 
 

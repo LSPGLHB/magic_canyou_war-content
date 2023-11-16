@@ -1,4 +1,5 @@
 GameEvents.Subscribe( "setContractUILUATOJS", setContractUILUATOJS);
+GameEvents.Subscribe( "closeKillCamLUATOJS", closeKillCamLUATOJS);
 
 function setContractUILUATOJS(data){
     var contractName = data.contractName
@@ -13,3 +14,8 @@ function setContractUILUATOJS(data){
     $("#UIContractPanelDescribe").text = contractDescribe
 }
 
+function closeKillCamLUATOJS(data){
+
+    $.GetContextPanel().GetParent().GetParent().FindChild("CustomHudElements").FindChildTraverse("KillCam").style.visibility = "collapse";
+
+}

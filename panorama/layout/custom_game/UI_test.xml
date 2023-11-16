@@ -41,6 +41,9 @@
         <Panel class="UITestButton" >
             <Label class="LabelTestButton" text="高级铭文" onactivate="buttonk()"/>
         </Panel>
+        <Panel class="UITestButton" >
+            <Label class="LabelTestButton" text="复活" onactivate="buttonl()"/>
+        </Panel>
     </Panel>
 
 </root>
