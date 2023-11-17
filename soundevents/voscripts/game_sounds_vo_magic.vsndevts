@@ -149,6 +149,20 @@
                             "value0"    "sounds/items/force_staff.vsnd"
 }   }   }   }   }   }   }
 
+"magic_pull_push_fail"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/deny_magic.vsnd"
+}   }   }   }   }   }   }
+
+
+
 "magic_wake_up"{
     "operator_stacks"{
         "update_stack"{

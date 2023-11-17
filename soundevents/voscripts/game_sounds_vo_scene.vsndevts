@@ -249,3 +249,16 @@
                         "value"{
                             "value0"    "sounds/ui/panorama/panorama_rollover_lg_01.vsnd"
 }   }   }   }   }   }   }
+
+"scene_voice_player_win"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/legion_commander/duel_victory.vsnd"
+}   }   }   }   }   }   }
+
