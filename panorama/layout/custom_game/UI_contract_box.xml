@@ -9,14 +9,17 @@
     <Panel hittest="false">
        <Panel class="UIContractPanelBG">
             <Panel class="UIContractPanelIconBox">
-                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/talent_icon/faceless_void_time_lock.png"/>
-                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/talent_icon/ogre_magi_bloodlust.png"/>
-                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/talent_icon/ogre_magi_multicast.png"/>
-                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/talent_icon/omniknight_purification.png"/>
-                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/talent_icon/omniknight_repel.png"/>
-                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/talent_icon/sven_storm_bolt.png"/>
-
-
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/battle_magician.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/control_force.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/damage_power.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/dark_mage.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/guerrilla_force.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/keeper_of_the_light_chakra_magic.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/scout.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/sky_eyes.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/spell_power.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/tank.png"/>
+                <Image id="UIContractPanelIcon" class="UIContractPanelIcon" src="file://{images}/custom_game/contract_icon/nil.png"/>
                 <Label id="UIContractPanelName" class="UIContractPanelName" text="无契约"/>
             </Panel> 
             <Panel class="UIContractPanelDescribeBox">
