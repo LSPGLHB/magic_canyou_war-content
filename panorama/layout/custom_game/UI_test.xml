@@ -47,6 +47,9 @@
         <Panel class="UITestButton" >
             <Label class="LabelTestButton" text="技能刷新" onactivate="buttonm()"/>
         </Panel>
+        <Panel class="UITestButton" >
+            <Label class="LabelTestButton" text="自杀" onactivate="buttonn()"/>
+        </Panel>
     </Panel>
 
 </root>

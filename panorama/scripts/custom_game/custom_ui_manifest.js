@@ -8,6 +8,12 @@ centerBlock.FindChildTraverse("AghsStatusContainer").style.visibility = "collaps
 // centerBlock.FindChildTraverse("AbilitiesAndStatBranch").style.visibility = "visible";
 centerBlock.FindChildTraverse("StatBranch").style.visibility = "collapse";//隐藏天赋面板
 centerBlock.FindChildTraverse("level_stats_frame").style.visibility = "collapse";//隐藏天赋闪烁
+centerBlock.FindChildTraverse("stats_tooltip_region").style.visibility = "collapse";
+centerBlock.FindChildTraverse("stats_container").style.visibility = "visible";//隐藏头像属性面板
+centerBlock.FindChildTraverse("xp").style.visibility = "collapse";//隐藏等级面板
+centerBlock.FindChildTraverse("death_panel_buyback").style.visibility = "collapse";//隐藏买活
+
+
 
 centerBlock.FindChildTraverse("right_flare").style.visibility = "collapse";//隐藏装饰
 HUD_UI.FindChildTraverse("GlyphScanContainer").style.visibility = "collapse";//隐藏地图装饰2

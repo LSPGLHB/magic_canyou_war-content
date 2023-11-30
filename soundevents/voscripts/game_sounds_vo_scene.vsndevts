@@ -262,3 +262,75 @@
                             "value0"    "sounds/weapons/hero/legion_commander/duel_victory.vsnd"
 }   }   }   }   }   }   }
 
+"scene_voice_samsara_stone_running"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/blacksmith.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_samsara_stone_break"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/weapons/hero/underlord/portal_out.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_round_up"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/power_up_06.vsnd"
+}   }   }   }   }   }   }
+
+
+"scene_voice_round_study"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/economy/underdraft_levelup_1.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_round_ability_get"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/ui_message_popup_fast_01.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_round_study_counter"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/deny_cooldown.vsnd"
+}   }   }   }   }   }   }

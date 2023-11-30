@@ -68,6 +68,7 @@ function createMagicList(data,funcCallBack){
     var debuffDurationList_36 = data.debuffDurationList_36
     var GSpeedList_37 = data.GSpeedList_37
     var aoeDurationList_38 = data.aoeDurationList_38
+    var disableTurningTimeList_39 = data.disableTurningTimeList_39
 
     var boomDelayList_50 = data.boomDelayList_50
     var visionRadiusList_51 = data.visionRadiusList_51
@@ -547,6 +548,27 @@ function createMagicList(data,funcCallBack){
             magicAoeDuration38Value.text = aoeDurationList_38[i] + 's'
         }
 
+        if (aoeDurationList_38[i] != 'null'){
+            var magicAoeDuration38 = $.CreatePanel('Panel', $("#magicSpecialVal1"+i),"magicAoeDuration38"+i);
+            magicAoeDuration38.AddClass("magicSpecialValItem")     
+            var magicAoeDuration38Title = $.CreatePanel('Label', $("#magicAoeDuration38"+i),"magicAoeDuration38Title"+i);
+            magicAoeDuration38Title.AddClass("magicEffectTitle")
+            magicAoeDuration38Title.text = '基础持续时间：'
+            var magicAoeDuration38Value = $.CreatePanel('Label', $("#magicAoeDuration38"+i),"magicAoeDuration38Value"+i);
+            magicAoeDuration38Value.AddClass("magicSpecialValue")
+            magicAoeDuration38Value.text = aoeDurationList_38[i] + 's'
+        }
+        
+        if (disableTurningTimeList_39[i] != 'null'){
+            var magicAoeDuration38 = $.CreatePanel('Panel', $("#magicSpecialVal1"+i),"magicAoeDuration38"+i);
+            magicAoeDuration38.AddClass("magicSpecialValItem")     
+            var magicAoeDuration38Title = $.CreatePanel('Label', $("#magicAoeDuration38"+i),"magicAoeDuration38Title"+i);
+            magicAoeDuration38Title.AddClass("magicEffectTitle")
+            magicAoeDuration38Title.text = '基础僵直持续时间：'
+            var magicAoeDuration38Value = $.CreatePanel('Label', $("#magicAoeDuration38"+i),"magicAoeDuration38Value"+i);
+            magicAoeDuration38Value.AddClass("magicSpecialValue")
+            magicAoeDuration38Value.text = disableTurningTimeList_39[i] + 's'
+        }
 
 
         //var magicSpecialValBox2 = $.CreatePanel('Panel', $("#magicSpecialValBox"+i),"magicSpecialVal2"+i);
