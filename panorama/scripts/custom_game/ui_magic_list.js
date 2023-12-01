@@ -548,16 +548,6 @@ function createMagicList(data,funcCallBack){
             magicAoeDuration38Value.text = aoeDurationList_38[i] + 's'
         }
 
-        if (aoeDurationList_38[i] != 'null'){
-            var magicAoeDuration38 = $.CreatePanel('Panel', $("#magicSpecialVal1"+i),"magicAoeDuration38"+i);
-            magicAoeDuration38.AddClass("magicSpecialValItem")     
-            var magicAoeDuration38Title = $.CreatePanel('Label', $("#magicAoeDuration38"+i),"magicAoeDuration38Title"+i);
-            magicAoeDuration38Title.AddClass("magicEffectTitle")
-            magicAoeDuration38Title.text = '基础持续时间：'
-            var magicAoeDuration38Value = $.CreatePanel('Label', $("#magicAoeDuration38"+i),"magicAoeDuration38Value"+i);
-            magicAoeDuration38Value.AddClass("magicSpecialValue")
-            magicAoeDuration38Value.text = aoeDurationList_38[i] + 's'
-        }
         
         if (disableTurningTimeList_39[i] != 'null'){
             var magicAoeDuration38 = $.CreatePanel('Panel', $("#magicSpecialVal1"+i),"magicAoeDuration38"+i);
