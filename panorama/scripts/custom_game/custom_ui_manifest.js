@@ -1,6 +1,7 @@
 var HUD_UI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements");
 var centerBlock = HUD_UI.FindChildTraverse("center_block");
 HUD_UI.FindChildTraverse("shop_launcher_block").style.visibility = "collapse"; //隐藏右下部分
+HUD_UI.FindChildTraverse("GlyphScanContainer").style.visibility = "collapse";//隐藏地图装饰2
 
 //HUD_UI.FindChildTraverse("scoreboard").FindChildTraverse("Background").style.visibility = "collapse";
 
@@ -12,11 +13,12 @@ centerBlock.FindChildTraverse("stats_tooltip_region").style.visibility = "collap
 centerBlock.FindChildTraverse("stats_container").style.visibility = "visible";//隐藏头像属性面板
 centerBlock.FindChildTraverse("xp").style.visibility = "collapse";//隐藏等级面板
 centerBlock.FindChildTraverse("death_panel_buyback").style.visibility = "collapse";//隐藏买活
-
-
-
 centerBlock.FindChildTraverse("right_flare").style.visibility = "collapse";//隐藏装饰
-HUD_UI.FindChildTraverse("GlyphScanContainer").style.visibility = "collapse";//隐藏地图装饰2
+
+
+
+
+
 
 var Pre_UI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("PreGame");//隐藏选英雄后等待画面
 //Pre_UI.FindChildTraverse("RightContainer").style.visibility = "collapse";

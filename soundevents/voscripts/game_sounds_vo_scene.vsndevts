@@ -334,3 +334,52 @@
                         "value"{
                             "value0"    "sounds/ui/deny_cooldown.vsnd"
 }   }   }   }   }   }   }
+
+"scene_voice_round_battle_start"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ambient/mega_horn_radiant.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_round_battle_fight"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/stingers/enc/faceless_arcana_debut.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_round_battle_buff_get"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/ui/treasure_02.vsnd"
+}   }   }   }   }   }   }
+
+"scene_voice_magic_stone_broken"{
+    "operator_stacks"{
+        "update_stack"{
+            "reference_operator"{
+                "operator"          "sos_reference_stack"
+                "reference_stack"   "dota_update_vo_switch"
+                "operator_variables"{
+                    "vsnd_files"{
+                        "value"{
+                            "value0"    "sounds/physics/damage/building/dire_tower_destruction_03.vsnd"
+}   }   }   }   }   }   }
+
