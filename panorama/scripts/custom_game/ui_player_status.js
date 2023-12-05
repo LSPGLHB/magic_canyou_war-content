@@ -12,6 +12,7 @@ function openPlayerStatusLUATOJS(data){
     $("#UIPlayerStatusPanelBG").AddClass("UIPlayerStatusPanelBG")
 
     var heroNameList = data.playerStatusHeroList
+    var teamList = data.playerStatusTeamList
     var playerContractLearn = data.playerContractLearn
     var playerAbilityNameList = data.playerStatusAbilityList
     var playerStatusItemList = data.playerStatusItemList
@@ -79,10 +80,10 @@ function openPlayerStatusLUATOJS(data){
             var playerStatusTeam = $.CreatePanel('Panel', $("#UIPlayerStatusPanelBG"),playerStatusTeamId);
             playerStatusTeam.AddClass("playerStatusTeam")
         }
-        
-        if(i<5){
+        var team = teamList[i]
+        if(team == 2){
             var playerStatusPlayerBox = $.CreatePanel('Panel', $("#playerStatusTeam1"),"playerStatusPlayerBox" + i);
-        }else{
+        }else if (team == 3){
             var playerStatusPlayerBox = $.CreatePanel('Panel', $("#playerStatusTeam2"),"playerStatusPlayerBox" + i);
         }
         playerStatusPlayerBox.AddClass("playerStatusPlayerBox")
