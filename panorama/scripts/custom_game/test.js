@@ -51,5 +51,8 @@ function buttonm(){
 function buttonn(){
     GameEvents.SendCustomGameEventToServer( "buttonnJSTOLUA", {})
 }
+function buttono(){
+    GameEvents.SendCustomGameEventToServer( "buttonoJSTOLUA", {})
+}
 
 

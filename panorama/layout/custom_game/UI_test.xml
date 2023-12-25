@@ -50,6 +50,9 @@
         <Panel class="UITestButton" >
             <Label class="LabelTestButton" text="自杀" onactivate="buttonn()"/>
         </Panel>
+        <Panel class="UITestButton" >
+            <Label class="LabelTestButton" text="加点" onactivate="buttono()"/>
+        </Panel>
     </Panel>
 
 </root>
